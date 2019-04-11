@@ -1,9 +1,9 @@
 <#import "parts/common.ftl" as c>
 <#import "parts/login.ftl" as l>
 
-<@c.page>
+<@c.page "none">
 Login page
-<@l.login "/login" />
+<@l.login "/login" false/>
 <a href="/registrationClientInfo">Add new user</a>
 </@c.page>
 

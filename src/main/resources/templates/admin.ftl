@@ -1,5 +1,5 @@
 <#import "parts/common.ftl" as c>
 
-<@c.page>
+<@c.page "none">
 HI ADMIN, IT'S YOUR PANEL!!
 </@c.page>
