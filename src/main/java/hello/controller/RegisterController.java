@@ -51,14 +51,14 @@ public class RegisterController {
 
     @PostMapping("/registration")
     public String addNewUser(User user, Map<String, Object> model){
-        User userFromDb = userRepo.findByLogin(user.getLogin());
-        System.out.println("Login " + user.getLogin());
+        User userFromDb = userRepo.findByUsername(user.getUsername());
+        System.out.println("Login " + user.getUsername());
         if (userFromDb != null){
             model.put("message", "User already exist!");
             return "registration";
         }
-        user.setId_client(tmpclientId);
-        user.setRole(1);
+//        user.setId_client(tmpclientId);
+//        user.setRole(1);
         userRepo.save(user);
         return "redirect:/login";
     }
