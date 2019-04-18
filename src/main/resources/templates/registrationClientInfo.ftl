@@ -5,9 +5,11 @@
 </head>
 <body>
 Add info about new client!
-{{#message}}
-    {{message}}
-{{/message}}
+
+<#if message??>
+        ${message}
+</#if>
+
 <form action="/registrationClientInfo" method="post">
     <div><label> Full name : <input type="text" name="FIO"/> </label></div>
     <div><label> Phone : <input type="tel" name="phone"/> </label></div>

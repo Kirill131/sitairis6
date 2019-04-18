@@ -1,8 +1,8 @@
 package hello.controller;
 
-import hello.domain.Client;
 import hello.domain.User;
-import hello.repos.ClientRepo;
+import hello.domain.User;
+import hello.repos.UserRepo;
 import hello.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,17 +14,16 @@ import java.util.Map;
 
 @Controller
 public class RegisterController {
-    private int tmpclientId;
+    private int tmpUserId;
     @Autowired
     private UserRepo userRepo;
 
     @Autowired
-    private ClientRepo clientRepo;
+    private UserRepo UserRepo;
 
-    @GetMapping("/registrationClientInfo")
-    public String registrationClientInfo(){
-        System.out.println("TEST IN GET");
-        return "registrationClientInfo";
+    @GetMapping("/registrationUserInfo")
+    public String registrationUserInfo(){
+        return "registrationUserInfo";
     }
 
     @GetMapping("/registration")
@@ -32,35 +31,32 @@ public class RegisterController {
         return "registration";
     }
 
-    @PostMapping("/registrationClientInfo")
-    public String addInfoAboutClient(Client client, Map<String, Object> model){
-
-        Client clientFromDB = clientRepo.findByPhoneAndEmail(client.getPhone(),
-                                                             client.getEmail());
-
-        if (clientFromDB != null){
-            model.put("message", "Client with number or email already exist!" + client.getFIO());
-            return "registrationClientInfo";
-        }
-        System.out.println("Client : " + client.getFIO() + client.getId());
-        clientRepo.save(client);
-        tmpclientId = client.getId();
-        System.out.println("///" + tmpclientId);
-        return "redirect:/registration";
-    }
-
     @PostMapping("/registration")
-    public String addNewUser(User user, Map<String, Object> model){
-        User userFromDb = userRepo.findByUsername(user.getUsername());
-        System.out.println("Login " + user.getUsername());
-        if (userFromDb != null){
-            model.put("message", "User already exist!");
-            return "registration";
+    public String addInfoAboutUser(User User, Map<String, Object> model){
+
+        User UserFromDB = UserRepo.findByUsername(User.getUsername());
+
+        if (UserFromDB != null){
+            model.put("message", "User with number or email already exist!" + User.getFIO());
+            return "registrationUserInfo";
         }
-//        user.setId_client(tmpclientId);
-//        user.setRole(1);
-        userRepo.save(user);
+        System.out.println("User : " + User.getFIO() + User.getId());
+        UserRepo.save(User);
         return "redirect:/login";
     }
+
+//    @PostMapping("/registration")
+//    public String addNewUser(User user, Map<String, Object> model){
+//        User userFromDb = userRepo.findByUsername(user.getUsername());
+//        System.out.println("Login " + user.getUsername());
+//        if (userFromDb != null){
+//            model.put("message", "User already exist!");
+//            return "registration";
+//        }
+////        user.setId_User(tmpUserId);
+////        user.setRole(1);
+//        userRepo.save(user);
+//        return "redirect:/login";
+//    }
 
 }
