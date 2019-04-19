@@ -1,10 +1,17 @@
 package hello.controller;
 
+<<<<<<< HEAD
 import hello.domain.Master;
 import hello.domain.User;
 import hello.repos.MasterRepo;
 import hello.repos.UserRepo;
 import hello.service.MasterService;
+=======
+import hello.domain.Client;
+import hello.domain.User;
+import hello.repos.ClientRepo;
+import hello.repos.UserRepo;
+>>>>>>> 25a7d076a7d96fafb8c66b94842a1626bfa91689
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -16,13 +23,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.Map;
 
 @Controller
+<<<<<<< HEAD
+=======
+
+>>>>>>> 25a7d076a7d96fafb8c66b94842a1626bfa91689
 public class MainController {
     @Autowired
     private UserRepo userRepo;
 
+<<<<<<< HEAD
     @Autowired
     private MasterRepo masterRepo;
 
+=======
+>>>>>>> 25a7d076a7d96fafb8c66b94842a1626bfa91689
     @GetMapping("/")
     public String hello() {
 //        model.addAttribute("name", name);
@@ -52,6 +66,7 @@ public class MainController {
         return "user";
     }
 
+<<<<<<< HEAD
     @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("/master")
     public String masterList(Map<String, Object> model){
@@ -60,4 +75,6 @@ public class MainController {
 
         return "master";
     }
+=======
+>>>>>>> 25a7d076a7d96fafb8c66b94842a1626bfa91689
 }

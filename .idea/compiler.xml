@@ -10,9 +10,12 @@
       </profile>
     </annotationProcessing>
   </component>
+<<<<<<< HEAD
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="OMS_ServiceStation" options="-parameters" />
     </option>
   </component>
+=======
+>>>>>>> 25a7d076a7d96fafb8c66b94842a1626bfa91689
 </project>
