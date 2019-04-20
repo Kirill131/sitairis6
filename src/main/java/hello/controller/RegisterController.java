@@ -1,32 +1,19 @@
 package hello.controller;
 
 import hello.domain.User;
-<<<<<<< HEAD
-=======
 import hello.domain.User;
 import hello.repos.UserRepo;
->>>>>>> 25a7d076a7d96fafb8c66b94842a1626bfa91689
 import hello.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-<<<<<<< HEAD
-=======
 import java.util.List;
->>>>>>> 25a7d076a7d96fafb8c66b94842a1626bfa91689
 import java.util.Map;
 
 @Controller
 public class RegisterController {
-<<<<<<< HEAD
-    //private int tmpUserId;
-
-    @Autowired
-    private UserRepo userRepo;
-
-=======
     private int tmpUserId;
     @Autowired
     private UserRepo userRepo;
@@ -39,7 +26,6 @@ public class RegisterController {
         return "registrationUserInfo";
     }
 
->>>>>>> 25a7d076a7d96fafb8c66b94842a1626bfa91689
     @GetMapping("/registration")
     public String registration(){
         return "registration";
@@ -48,18 +34,6 @@ public class RegisterController {
     @PostMapping("/registration")
     public String addInfoAboutUser(User User, Map<String, Object> model){
 
-<<<<<<< HEAD
-        User UserFromDB = userRepo.findByUsername(User.getUsername());
-
-        if (UserFromDB != null){
-            model.put("message", "User with number or email already exists!" + User.getFIO());
-            return "registrationUserInfo";
-        }
-        System.out.println("User : " + User.getFIO() + User.getId());
-        userRepo.save(User);
-        return "redirect:/login";
-    }
-=======
         User UserFromDB = UserRepo.findByUsername(User.getUsername());
 
         if (UserFromDB != null){
@@ -85,5 +59,4 @@ public class RegisterController {
 //        return "redirect:/login";
 //    }
 
->>>>>>> 25a7d076a7d96fafb8c66b94842a1626bfa91689
 }

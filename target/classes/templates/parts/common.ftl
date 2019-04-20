@@ -3,11 +3,7 @@
 <html>
 <head>
     <meta charset=UTF-8">
-<<<<<<< HEAD
     <title>СТО</title>
-=======
-    <title>Page</title>
->>>>>>> 25a7d076a7d96fafb8c66b94842a1626bfa91689
 
     <link rel="stylesheet" href="/static/style.css">
 

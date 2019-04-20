@@ -40,15 +40,9 @@
                                    name="password">
                         </div>
                         <div class="form-group">
-<<<<<<< HEAD
-                            <label for="fIO">ФИО</label>
-                            <input type="text" class="form-control" id="fIO" placeholder="ФИО"
-                                   name="fIO">
-=======
                             <label for="FIO">ФИО</label>
                             <input type="text" class="form-control" id="FIO" placeholder="ФИО"
                                    name="FIO">
->>>>>>> 25a7d076a7d96fafb8c66b94842a1626bfa91689
                         </div>
                         <div class="form-group">
                             <label for="phone">Номер телефона</label>

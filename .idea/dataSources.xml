@@ -5,11 +5,7 @@
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-<<<<<<< HEAD
       <jdbc-url>jdbc:mysql://localhost:3305/kurs6</jdbc-url>
-=======
-      <jdbc-url>jdbc:mysql://localhost:3306/kurs6</jdbc-url>
->>>>>>> 25a7d076a7d96fafb8c66b94842a1626bfa91689
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
