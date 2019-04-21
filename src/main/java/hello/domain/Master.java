@@ -10,15 +10,15 @@ public class Master {
     private Long idmaster;
 
     private String fIO;
-    private int date_of_birth;
+    private String date_of_birth;
     private int category;
     private int profile;
-    private int year_start_working;
+    private String year_start_working;
 
     public Master(){
     }
 
-    public Master(String fIO, int date_of_birth, int category, int profile, int year_start_working) {
+    public Master(String fIO, String date_of_birth, int category, int profile, String year_start_working) {
         this.fIO = fIO;
         this.date_of_birth = date_of_birth;
         this.category = category;
@@ -42,11 +42,11 @@ public class Master {
         this.fIO = fIO;
     }
 
-    public int getDate_of_birth() {
+    public String getDate_of_birth() {
         return date_of_birth;
     }
 
-    public void setDate_of_birth(int date_of_birth) {
+    public void setDate_of_birth(String date_of_birth) {
         this.date_of_birth = date_of_birth;
     }
 
@@ -66,11 +66,11 @@ public class Master {
         this.profile = profile;
     }
 
-    public int getYear_start_working() {
+    public String getYear_start_working() {
         return year_start_working;
     }
 
-    public void setYear_start_working(int year_start_working) {
+    public void setYear_start_working(String year_start_working) {
         this.year_start_working = year_start_working;
     }
 }

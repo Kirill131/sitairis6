@@ -9,6 +9,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -19,9 +20,6 @@ import java.util.Map;
 public class MainController {
     @Autowired
     private UserRepo userRepo;
-
-    @Autowired
-    private MasterRepo masterRepo;
 
     @GetMapping("/")
     public String hello() {
@@ -50,14 +48,5 @@ public class MainController {
         Iterable<User> users = userRepo.findAll();
         model.put("users", users);
         return "user";
-    }
-
-    @PreAuthorize("hasAuthority('ADMIN')")
-    @GetMapping("/master")
-    public String masterList(Map<String, Object> model){
-        Iterable<Master> masters = masterRepo.findAll();
-        model.put("masters", masters);
-
-        return "master";
     }
 }

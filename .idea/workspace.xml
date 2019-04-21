@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9250a1d0-22a9-47cd-af7a-b2c11d3197e5" name="Default Changelist" comment="" />
+    <list default="true" id="9250a1d0-22a9-47cd-af7a-b2c11d3197e5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/domain/Master.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/domain/Master.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/repos/MasterRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/repos/MasterRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/service/MasterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/master.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/master.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controller/RegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/Master.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/domain/Master.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/repos/MasterRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/repos/MasterRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/service/MasterService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/master.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/master.ftl" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,6 +60,13 @@
         <item name="kurs6@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="kurs6: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="master: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="kurs6@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="kurs6: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -50,73 +75,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/AdminController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/User.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Master.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
-              <folding>
-                <element signature="e#1985#1986#0" expanded="true" />
-                <element signature="e#2023#2024#0" expanded="true" />
-                <element signature="e#2053#2054#0" expanded="true" />
-                <element signature="e#2085#2086#0" expanded="true" />
-                <element signature="e#2113#2114#0" expanded="true" />
-                <element signature="e#2155#2156#0" expanded="true" />
-                <element signature="e#2189#2190#0" expanded="true" />
-                <element signature="e#2221#2222#0" expanded="true" />
-                <element signature="e#2249#2250#0" expanded="true" />
-                <element signature="e#2291#2292#0" expanded="true" />
-                <element signature="e#2325#2326#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftl">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="14" selection-end-line="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/master.ftl">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="204">
+              <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-end-line="25" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/MasterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hello/repos/UserRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="388">
+              <caret line="48" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,10 +114,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/MainController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/repos/MasterRepo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+            <state relative-caret-position="102">
+              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/master.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -147,6 +145,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>image</find>
+      <find>btn</find>
+      <find>filter</find>
+      <find>csrf</find>
+      <find>csr</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -177,11 +179,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/main.mustache" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/hello/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/repos/UserRepo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/footer.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/base.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/main.ftl" />
@@ -193,16 +193,21 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/registrationClientInfo.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/hello/service/ClientService.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/repos/ClientRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/domain/Master.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/service/MasterService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/domain/Master.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/service/MasterService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/repos/MasterRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/controller/MasterController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/master.ftl" />
       </list>
     </option>
   </component>
@@ -220,10 +225,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="15" />
+    <option name="y" value="4" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -231,42 +236,53 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="sitairis6-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sitairis6-master" type="462c0819:PsiDirectoryNode" />
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sitairis6-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sitairis6-master" type="462c0819:PsiDirectoryNode" />
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sitairis6-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sitairis6-master" type="462c0819:PsiDirectoryNode" />
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sitairis6-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sitairis6-master" type="462c0819:PsiDirectoryNode" />
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sitairis6-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sitairis6-master" type="462c0819:PsiDirectoryNode" />
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hello" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sitairis6-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sitairis6-master" type="462c0819:PsiDirectoryNode" />
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hello" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -274,8 +290,8 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sitairis6-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sitairis6-master" type="462c0819:PsiDirectoryNode" />
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -283,8 +299,8 @@
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sitairis6-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sitairis6-master" type="462c0819:PsiDirectoryNode" />
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -292,8 +308,8 @@
               <item name="repos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sitairis6-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sitairis6-master" type="462c0819:PsiDirectoryNode" />
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -301,23 +317,23 @@
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sitairis6-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sitairis6-master" type="462c0819:PsiDirectoryNode" />
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sitairis6-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sitairis6-master" type="462c0819:PsiDirectoryNode" />
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sitairis6-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sitairis6-master" type="462c0819:PsiDirectoryNode" />
+              <item name="sitairis6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sitairis6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -328,8 +344,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,7 +356,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555601267703" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555842845877" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -442,17 +456,21 @@
       <workItem from="1555524777775" duration="4218000" />
       <workItem from="1555709082184" duration="624000" />
       <workItem from="1555747410827" duration="301000" />
+      <workItem from="1555748094830" duration="620000" />
+      <workItem from="1555788731799" duration="4515000" />
+      <workItem from="1555833411343" duration="5794000" />
+      <workItem from="1555853498244" duration="4677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97249000" />
+    <option name="totallyTimeSpent" value="112855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23373677" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24508321" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -462,8 +480,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5098361" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24754098" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42459017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -482,7 +500,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="UML design tool window" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.17397882" />
+      <window_info anchor="right" id="Database" order="7" weight="0.17397882" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
@@ -530,18 +548,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/sitairis6" />
+    </ignored-roots>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OMS_ServiceStation.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e5d81b9f-9c1b-4eb5-9190-4c8958cea7a5/console.sql" />
     <entry file="das://e5d81b9f-9c1b-4eb5-9190-4c8958cea7a5/schema/igortest/table/user" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login11.mustache" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/Entity.class">
@@ -568,13 +580,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/clear.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Message.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/mainq.ftl" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/diagnostic.png">
@@ -587,42 +592,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="1" lean-forward="true" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/repair.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/config/MvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user.ftl">
       <provider selected="true" editor-type-id="text-editor">
@@ -667,28 +638,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/repos/ClientRepo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/repos/MasterRepo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Master.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-424" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -703,6 +652,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/repos/UserRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/config/MvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Role.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -710,88 +693,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/MasterService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="306">
+          <caret line="23" column="85" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/MasterService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="8" selection-end-line="10" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
-          <folding>
-            <element signature="e#1985#1986#0" expanded="true" />
-            <element signature="e#2023#2024#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
-            <element signature="e#2085#2086#0" expanded="true" />
-            <element signature="e#2113#2114#0" expanded="true" />
-            <element signature="e#2155#2156#0" expanded="true" />
-            <element signature="e#2189#2190#0" expanded="true" />
-            <element signature="e#2221#2222#0" expanded="true" />
-            <element signature="e#2249#2250#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="589">
+          <caret line="265" column="30" lean-forward="true" selection-start-line="265" selection-start-column="30" selection-end-line="265" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftl">
+    <entry file="das://2886b9b6-ccfc-40a0-ae16-4c5d24cc3d78/schema/kurs6/table/master">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="14" selection-end-line="58" />
+        <state relative-caret-position="204">
+          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-end-line="25" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Master.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/bind/annotation/RequestParam.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/repos/MasterRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/master.ftl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="306">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/repos/UserRepo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="307">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        <state relative-caret-position="71">
+          <caret line="33" column="72" lean-forward="true" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/MasterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="388">
+          <caret line="48" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
