@@ -86,6 +86,7 @@ public class User implements UserDetails {
         return roles;
     }
 
+    @OneToOne
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }

@@ -12,6 +12,9 @@
                     <th scope="col"><input type="checkbox" class="custom-control-input chk-all" name="user"></th>
                     <th scope="col">Username</th>
                     <th scope="col">Password</th>
+                    <th scope="col">FIO</th>
+                    <th scope="col">phone</th>
+                    <th scope="col">email</th>
                     <th scope="col">Role</th>
                     <#--<th scope="col">is active</th>-->
                 </tr>
@@ -23,7 +26,10 @@
                     <th><input type="checkbox" class="custom-control-input" name="user" value="${ user.id }"></th>
                     <td>${user.username}</td>
                     <td>${ user.password}</td>
-                    <#--<td>${ user.active}</td>-->
+                    <td>${ user.FIO}</td>
+                    <td>${ user.phone}</td>
+                    <td>${ user.email}</td>
+
                     <td><#list user.roles as role>${role}<#sep>, </#list></td>
                 </tr>
                 </#list>

@@ -1,14 +1,15 @@
 package hello.controller;
 
-import hello.domain.Client;
+import hello.domain.Master;
 import hello.domain.User;
-import hello.repos.ClientRepo;
+import hello.repos.MasterRepo;
 import hello.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -48,5 +49,4 @@ public class MainController {
         model.put("users", users);
         return "user";
     }
-
 }

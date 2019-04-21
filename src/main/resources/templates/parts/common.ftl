@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset=UTF-8">
-    <title>Page</title>
+    <title>СТО</title>
 
     <link rel="stylesheet" href="/static/style.css">
 
