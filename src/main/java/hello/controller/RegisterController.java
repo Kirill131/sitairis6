@@ -1,5 +1,6 @@
 package hello.controller;
 
+import hello.domain.Role;
 import hello.domain.User;
 import hello.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.Collections;
 import java.util.Map;
 
 @Controller
@@ -33,7 +35,8 @@ public class RegisterController {
             model.put("message", "User with number or email already exist!" + User.getFIO());
             return "registrationUserInfo";
         }
-        System.out.println("User : " + User.getFIO() + User.getId());
+        User.setActive(true);
+        User.setRoles(Collections.singleton(Role.USER));
         userRepo.save(User);
         return "redirect:/login";
     }
