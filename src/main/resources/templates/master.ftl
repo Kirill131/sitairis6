@@ -4,18 +4,25 @@
 <div>
     <form method="post">
         <input type="hidden" name="_csrf" value="${_csrf.token}">
+        <h3 style="color: #1e90ff">Добаление/редактирование мастера</h3>
         <input type="text" name="fIO" placeholder="ФИО">
         <input type="text" name="date_of_birth" placeholder="Дата рождения">
         <input type="number" name="category" placeholder="Категория">
         <input type="number" name="profile" placeholder="Профиль">
         <input type="text" name="year_start_working" placeholder="Год приема на работу">
-        <button class="button" type="submit">Добавить</button>
+        <button class="btn btn-outline-primary" type="submit">Добавить</button>
+            <form:label path="fIO">
+            <form:label path="date_of_birth">
+            <form:label path="category">
+            <form:label path="profile">
+            <form:label path="year_start_working">
     </form>
 </div>
 <form method="post" action="/master/filter">
     <input type="hidden" name="_csrf" value="${_csrf.token}">
+    <h3 style="color: #1e90ff">Поиск мастеров по категориям</h3>
     <input type="text" name="filter">
-    <button class="button" type="submit">Поиск</button>
+    <button class="btn btn-outline-primary" type="submit">Поиск</button>
 </form>
 <div class="wrapper">
     <form method="post">
@@ -30,17 +37,31 @@
                     <th scope="col">Категория</th>
                     <th scope="col">Профиль</th>
                     <th scope="col">Год начала работы</th>
+                    <th scope="col" width="100">Уволнение</th>
+                    <th scope="col" width="100">Редактирование</th>
                 </tr>
                 </thead>
                 <tbody>
                 <#list masters as master>
                 <tr>
-                <#--<th><input type="checkbox" class="custom-control-input" name="master" value="${ user.id }"></th>-->
                     <td>${master.fIO}</td>
                     <td>${master.date_of_birth}</td>
                     <td>${master.category}</td>
                     <td>${master.profile}</td>
                     <td>${master.year_start_working}</td>
+                    <td>
+                        <form method="post" action="/master/deleteMaster">
+                            <input type="hidden" value="${master.idmaster}" name="masterId">
+                            <input type="hidden" value="${_csrf.token}" name="_csrf">
+                            <button class="btn btn-danger" type="submit">Уволить</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/master/${master.idmaster}">
+                            <button type="submit" class="btn btn-secondary">Изменить</button>
+                            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+                        </form>
+                    </td>
                 </tr>
                 </#list>
                 </tbody>

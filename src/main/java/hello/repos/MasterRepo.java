@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface MasterRepo extends CrudRepository<Master, Long> {
-   List<Master> findByFIO(String FIO);
+    List<Master> findByCategory(int category);
 }

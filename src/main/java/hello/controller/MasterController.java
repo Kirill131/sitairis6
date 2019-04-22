@@ -1,13 +1,13 @@
 package hello.controller;
 
 import hello.domain.Master;
-import hello.repos.MasterRepo;
+import hello.service.MasterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -15,11 +15,11 @@ import java.util.Map;
 @PreAuthorize("hasAuthority('ADMIN')")
 public class MasterController {
     @Autowired
-    private MasterRepo masterRepo;
+    private MasterService masterService;
 
     @GetMapping
     public String masterList(Map<String, Object> model) {
-        Iterable<Master> masters = masterRepo.findAll();
+        Iterable<Master> masters = masterService.loadAllMasters();
         model.put("masters", masters);
 
         return "master";
@@ -30,9 +30,9 @@ public class MasterController {
                             @RequestParam int profile, @RequestParam String year_start_working, Map<String, Object> model) {
         Master master = new Master(fIO, date_of_birth, category, profile, year_start_working);
 
-        masterRepo.save(master);
+        masterService.saveMasters(master);
 
-        Iterable<Master> masters = masterRepo.findAll();
+        Iterable<Master> masters = masterService.loadAllMasters();
         model.put("masters", masters);
 
         return "master";
@@ -42,12 +42,29 @@ public class MasterController {
     public String filterMaster(@RequestParam("filter") String filter, Map<String, Object> model) {
         Iterable<Master> masters;
         if (filter != null && !filter.isEmpty()) {
-            masters = masterRepo.findByFIO(filter);
+            masters = masterService.loadMasterByFIO(Integer.parseInt(filter));
         } else {
-            masters = masterRepo.findAll();
+            masters = masterService.loadAllMasters();
         }
 
         model.put("masters", masters);
+
+        return "master";
+    }
+
+    @PostMapping("deleteMaster")
+    public String deleteEvent(@RequestParam("masterId") Master master, Map<String, Object> model){
+        masterService.deleteMaster(master);
+
+        Iterable<Master> masters = masterService.loadAllMasters();
+        model.put("masters", masters);
+
+        return "master";
+    }
+
+    @GetMapping("{master}")
+    public String editMaster(@PathVariable Master master, Model model){
+        model.addAttribute("thisMaster", master);
 
         return "master";
     }

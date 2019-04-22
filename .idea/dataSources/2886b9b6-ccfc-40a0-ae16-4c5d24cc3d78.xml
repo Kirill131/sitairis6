@@ -1431,11 +1431,13 @@
     <column id="345" parent="292" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="346" parent="292" name="username">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="347" parent="292" name="FIO">
@@ -1453,36 +1455,45 @@
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="350" parent="292" name="PRIMARY">
+    <index id="350" parent="292" name="user_username_uindex">
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="351" parent="292" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="351" parent="293" name="user_id">
+    <key id="352" parent="292" name="user_username_uindex">
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>user_username_uindex</UnderlyingIndexName>
+    </key>
+    <column id="353" parent="293" name="user_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="352" parent="293" name="roles">
+    <column id="354" parent="293" name="roles">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="353" parent="293" name="user_id_UNIQUE">
+    <index id="355" parent="293" name="user_id_UNIQUE">
       <ColNames>user_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="354" parent="293" name="fk1_idx">
+    <index id="356" parent="293" name="fk1_idx">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="355" parent="293" name="user_id_UNIQUE">
+    <key id="357" parent="293" name="user_id_UNIQUE">
       <ColNames>user_id</ColNames>
       <UnderlyingIndexName>user_id_UNIQUE</UnderlyingIndexName>
     </key>
-    <foreign-key id="356" parent="293" name="fk11">
+    <foreign-key id="358" parent="293" name="fk11">
       <ColNames>user_id</ColNames>
       <RefSchemaName>kurs6</RefSchemaName>
       <RefTableName>user</RefTableName>
