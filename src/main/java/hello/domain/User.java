@@ -15,7 +15,7 @@ public class User implements UserDetails {
     private Long id;
     private String username;
     private String password;
-    private String FIO;
+    private String fio;
     private String phone;
     private String email;
     private boolean active;
@@ -90,12 +90,12 @@ public class User implements UserDetails {
         this.roles = roles;
     }
 
-    public String getFIO() {
-        return FIO;
+    public String getFio() {
+        return fio;
     }
 
-    public void setFIO(String FIO) {
-        this.FIO = FIO;
+    public void setFio(String fio) {
+        this.fio = fio;
     }
 
     public String getPhone() {

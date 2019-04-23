@@ -4,18 +4,13 @@
 <div>
     <form method="post">
         <input type="hidden" name="_csrf" value="${_csrf.token}">
-        <h3 style="color: #1e90ff">Добаление/редактирование мастера</h3>
+        <h3 style="color: #1e90ff">Добаление мастера</h3>
         <input type="text" name="fIO" placeholder="ФИО">
         <input type="text" name="date_of_birth" placeholder="Дата рождения">
         <input type="number" name="category" placeholder="Категория">
-        <input type="number" name="profile" placeholder="Профиль">
+        <input type="text" name="profile" placeholder="Профиль">
         <input type="text" name="year_start_working" placeholder="Год приема на работу">
         <button class="btn btn-outline-primary" type="submit">Добавить</button>
-            <form:label path="fIO">
-            <form:label path="date_of_birth">
-            <form:label path="category">
-            <form:label path="profile">
-            <form:label path="year_start_working">
     </form>
 </div>
 <form method="post" action="/master/filter">
@@ -57,7 +52,7 @@
                         </form>
                     </td>
                     <td>
-                        <form action="/master/${master.idmaster}">
+                        <form method="get" action="/master/${master.idmaster}">
                             <button type="submit" class="btn btn-secondary">Изменить</button>
                             <input type="hidden" name="_csrf" value="${_csrf.token}"/>
                         </form>

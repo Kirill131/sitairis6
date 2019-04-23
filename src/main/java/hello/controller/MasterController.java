@@ -4,6 +4,7 @@ import hello.domain.Master;
 import hello.service.MasterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -27,7 +28,7 @@ public class MasterController {
 
     @PostMapping
     public String addMaster(@RequestParam String fIO, @RequestParam String date_of_birth, @RequestParam int category,
-                            @RequestParam int profile, @RequestParam String year_start_working, Map<String, Object> model) {
+                            @RequestParam String profile, @RequestParam String year_start_working, Map<String, Object> model) {
         Master master = new Master(fIO, date_of_birth, category, profile, year_start_working);
 
         masterService.saveMasters(master);
@@ -42,7 +43,7 @@ public class MasterController {
     public String filterMaster(@RequestParam("filter") String filter, Map<String, Object> model) {
         Iterable<Master> masters;
         if (filter != null && !filter.isEmpty()) {
-            masters = masterService.loadMasterByFIO(Integer.parseInt(filter));
+            masters = masterService.loadMasterByCategory(Integer.parseInt(filter));
         } else {
             masters = masterService.loadAllMasters();
         }
@@ -62,10 +63,23 @@ public class MasterController {
         return "master";
     }
 
-    @GetMapping("{master}")
-    public String editMaster(@PathVariable Master master, Model model){
-        model.addAttribute("thisMaster", master);
+    @GetMapping("/{master}")
+    public String editMaster(@PathVariable Master master, Model model) {
+        model.addAttribute("master", master);
+        return "editMaster";
+    }
 
-        return "master";
+    @PostMapping("/show")
+    public String edit(@RequestParam String fIO, @RequestParam String date_of_birth, @RequestParam int category, @RequestParam String profile,
+                       @RequestParam String year_start_working, @RequestParam("idmaster") Master master){
+
+        master.setfIO(fIO);
+        master.setDate_of_birth(date_of_birth);
+        master.setCategory(category);
+        master.setProfile(profile);
+        master.setYear_start_working(year_start_working);
+        masterService.saveMasters(master);
+
+        return "redirect:/master";
     }
 }

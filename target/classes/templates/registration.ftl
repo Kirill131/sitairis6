@@ -40,9 +40,9 @@
                                    name="password">
                         </div>
                         <div class="form-group">
-                            <label for="FIO">ФИО</label>
-                            <input type="text" class="form-control" id="FIO" placeholder="ФИО"
-                                   name="FIO">
+                            <label for="fio">ФИО</label>
+                            <input type="text" class="form-control" id="fio" placeholder="ФИО"
+                                   name="fio">
                         </div>
                         <div class="form-group">
                             <label for="phone">Номер телефона</label>

@@ -4,6 +4,7 @@ import hello.domain.Master;
 import hello.domain.User;
 import hello.repos.MasterRepo;
 import hello.repos.UserRepo;
+import hello.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -18,10 +19,7 @@ import java.util.Map;
 @Controller
 
 public class MainController {
-    @Autowired
-    private UserRepo userRepo;
-
-    @GetMapping("/")
+   @GetMapping("/")
     public String hello() {
 //        model.addAttribute("name", name);
         return "main";
@@ -40,13 +38,5 @@ public class MainController {
     public String me(Map<String, Object> model){
 
         return "main";
-    }
-
-    @PreAuthorize("hasAuthority('ADMIN')")
-    @GetMapping("/user")
-    public String userList(Map<String, Object> model){
-        Iterable<User> users = userRepo.findAll();
-        model.put("users", users);
-        return "user";
     }
 }

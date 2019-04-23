@@ -12,13 +12,13 @@ public class Master {
     private String fIO;
     private String date_of_birth;
     private int category;
-    private int profile;
+    private String profile;
     private String year_start_working;
 
     public Master(){
     }
 
-    public Master(String fIO, String date_of_birth, int category, int profile, String year_start_working) {
+    public Master(String fIO, String date_of_birth, int category, String profile, String year_start_working) {
         this.fIO = fIO;
         this.date_of_birth = date_of_birth;
         this.category = category;
@@ -58,11 +58,11 @@ public class Master {
         this.category = category;
     }
 
-    public int getProfile() {
+    public String getProfile() {
         return profile;
     }
 
-    public void setProfile(int profile) {
+    public void setProfile(String profile) {
         this.profile = profile;
     }
 

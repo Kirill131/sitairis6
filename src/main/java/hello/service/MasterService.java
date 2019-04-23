@@ -15,7 +15,7 @@ public class MasterService {
     private MasterRepo masterRepo;
 
     @Transactional
-    public List<Master> loadMasterByFIO(int category){
+    public List<Master> loadMasterByCategory(int category){
         return  masterRepo.findByCategory(category);
     }
 

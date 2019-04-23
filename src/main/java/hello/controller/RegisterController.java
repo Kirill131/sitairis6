@@ -32,7 +32,7 @@ public class RegisterController {
         User UserFromDB = userRepo.findByUsername(User.getUsername());
 
         if (UserFromDB != null){
-            model.put("message", "User with number or email already exist!" + User.getFIO());
+            model.put("message", "User with number or email already exist!" + User.getFio());
             return "registrationUserInfo";
         }
         User.setActive(true);
