@@ -55,8 +55,8 @@ public class UserController {
     }
 
     @PostMapping("/show")
-    public String edit(@RequestParam boolean active, @RequestParam("id") User user){
-
+    public String edit(@RequestParam String fio, @RequestParam boolean active, @RequestParam("id") User user){
+        user.setFio(fio);
         user.setActive(active);
 
         userService.saveUsers(user);

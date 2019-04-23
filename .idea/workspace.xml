@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9250a1d0-22a9-47cd-af7a-b2c11d3197e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2886b9b6-ccfc-40a0-ae16-4c5d24cc3d78.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2886b9b6-ccfc-40a0-ae16-4c5d24cc3d78.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/controller/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/controller/MasterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/MasterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/domain/Master.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/domain/Master.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/repos/MasterRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/repos/MasterRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/repos/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/repos/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/service/MasterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/service/MasterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/master.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/master.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/MasterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controller/MasterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controller/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/Master.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/domain/Master.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/repos/MasterRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/repos/MasterRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/service/MasterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/service/MasterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/master.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/master.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editUser.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editUser.ftl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -104,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
+            <state relative-caret-position="193">
+              <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,20 +90,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="-306">
               <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/master.ftl">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editUser.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="7" lean-forward="true" selection-start-line="15" selection-end-line="20" selection-end-column="7" />
+            <state relative-caret-position="153">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+              <folding>
+                <element signature="e#115#137#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -205,14 +185,14 @@
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/MasterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/MasterEditionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/service/MasterService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/editUser.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/hello/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/repos/UserRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/user.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/editUser.ftl" />
       </list>
     </option>
   </component>
@@ -360,7 +340,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556048610020" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556050053179" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="E:/6_help/BookManager" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -467,7 +447,7 @@
       <workItem from="1555947606287" duration="4098000" />
       <workItem from="1556001618454" duration="5131000" />
       <workItem from="1556015706205" duration="4770000" />
-      <workItem from="1556035389148" duration="8151000" />
+      <workItem from="1556035389148" duration="9372000" />
     </task>
     <task id="LOCAL-00001" summary="add master">
       <created>1555858552258</created>
@@ -487,7 +467,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149181000" />
+    <option name="totallyTimeSpent" value="150402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -779,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -848,13 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editUser.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -871,18 +837,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
+        <state relative-caret-position="193">
+          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="-306">
           <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editUser.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="e#115#137#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

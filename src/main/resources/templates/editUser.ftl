@@ -7,9 +7,11 @@
         <table  style="margin-top: 20px">
             <thead align="center">
             <tr>
+                <th scope="col">ФИО</th>
                 <th scope="col">Активен</th>
             </tr>
             <tr align="center">
+                <th><input class="form-control" type="text" name="fio" value="${user.fio}"></th>
                 <th><input class="form-control" type="text" name="active" value="${user.active?c}"></th>
             </tr>
             </thead>
