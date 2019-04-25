@@ -4,7 +4,6 @@ import hello.domain.Master;
 import hello.service.MasterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -28,7 +27,7 @@ public class MasterController {
 
     @PostMapping
     public String addMaster(@RequestParam String fIO, @RequestParam String date_of_birth, @RequestParam int category,
-                            @RequestParam String profile, @RequestParam String year_start_working, Map<String, Object> model) {
+                            @RequestParam int profile, @RequestParam String year_start_working, Map<String, Object> model) {
         Master master = new Master(fIO, date_of_birth, category, profile, year_start_working);
 
         masterService.saveMasters(master);
@@ -70,7 +69,7 @@ public class MasterController {
     }
 
     @PostMapping("/show")
-    public String edit(@RequestParam String fIO, @RequestParam String date_of_birth, @RequestParam int category, @RequestParam String profile,
+    public String edit(@RequestParam String fIO, @RequestParam String date_of_birth, @RequestParam int category, @RequestParam int profile,
                        @RequestParam String year_start_working, @RequestParam("idmaster") Master master){
 
         master.setfIO(fIO);

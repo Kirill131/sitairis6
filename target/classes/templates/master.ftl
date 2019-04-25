@@ -8,7 +8,7 @@
         <input type="text" name="fIO" placeholder="ФИО">
         <input type="text" name="date_of_birth" placeholder="Дата рождения">
         <input type="number" name="category" placeholder="Категория">
-        <input type="text" name="profile" placeholder="Профиль">
+        <input type="number" name="profile" placeholder="Профиль">
         <input type="text" name="year_start_working" placeholder="Год приема на работу">
         <button class="btn btn-outline-primary" type="submit">Добавить</button>
     </form>

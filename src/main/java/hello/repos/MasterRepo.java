@@ -9,5 +9,4 @@ import java.util.List;
 @Repository
 public interface MasterRepo extends CrudRepository<Master, Long> {
     List<Master> findByCategory(int category);
-    Master findByIdmaster(Long idmaster);
 }

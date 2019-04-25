@@ -39,7 +39,7 @@ public class UserController {
     }
 
     @PostMapping("deleteUser")
-    public String deleteEvent(@RequestParam("id") User user, Map<String, Object> model){
+    public String delete(@RequestParam("id") User user, Map<String, Object> model){
         userService.deleteUser(user);
 
         Iterable<User> users = userService.loadAllUsers();

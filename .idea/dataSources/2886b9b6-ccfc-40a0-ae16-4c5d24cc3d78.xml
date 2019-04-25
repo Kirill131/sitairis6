@@ -1209,7 +1209,7 @@
     </column>
     <column id="306" parent="286" name="profile">
       <Position>5</Position>
-      <DataType>varchar(30)|0s</DataType>
+      <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>

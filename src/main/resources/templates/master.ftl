@@ -8,7 +8,7 @@
         <input type="text" name="fIO" placeholder="ФИО">
         <input type="text" name="date_of_birth" placeholder="Дата рождения">
         <input type="number" name="category" placeholder="Категория">
-        <input type="text" name="profile" placeholder="Профиль">
+        <input type="number" name="profile" placeholder="Профиль">
         <input type="text" name="year_start_working" placeholder="Год приема на работу">
         <button class="btn btn-outline-primary" type="submit">Добавить</button>
     </form>
@@ -32,7 +32,7 @@
                     <th scope="col">Категория</th>
                     <th scope="col">Профиль</th>
                     <th scope="col">Год начала работы</th>
-                    <th scope="col" width="100">Уволнение</th>
+                    <th scope="col" width="100">Увольнение</th>
                     <th scope="col" width="100">Редактирование</th>
                 </tr>
                 </thead>
