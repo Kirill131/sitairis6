@@ -56,6 +56,7 @@
                     <td>
                         <form method="post" action="/carlist/deleteCar">
                             <input type="hidden" value="${car.idcar}" name="idcar">
+                            <input type="hidden" value="${car.iduser}" name="iduser">
                             <input type="hidden" value="${_csrf.token}" name="_csrf">
                             <button class="btn btn-danger" type="submit">Удалить</button>
                         </form>

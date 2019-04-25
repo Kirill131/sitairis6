@@ -57,12 +57,12 @@ public class CarController {
     }
 
     @PostMapping("deleteCar")
-    public String deleteEvent(Car car, @RequestParam("id") int id, Map<String, Object> model){
+    public String deleteEvent(Car car,  Map<String, Object> model){
         carService.deleteCar(car);
 
 //        carList(id, model);
 
-        Iterable<Car> cars = carService.loadAllUserCars(id);
+        Iterable<Car> cars = carService.loadAllUserCars(car.getIduser());
         model.put("cars", cars);
 
         return "carList";
