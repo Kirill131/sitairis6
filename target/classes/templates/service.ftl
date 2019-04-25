@@ -27,7 +27,7 @@
                     <th scope="col">Название</th>
                     <th scope="col">Стоимость</th>
                     <th scope="col">Время</th>
-                    <th scope="col" width="100">Уволнение</th>
+                    <th scope="col" width="100">Удаление</th>
                     <th scope="col" width="100">Редактирование</th>
                 </tr>
                 </thead>

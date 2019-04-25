@@ -13,12 +13,14 @@
         <button class="btn btn-outline-primary" type="submit">Добавить</button>
     </form>
 </div>
+
 <form method="post" action="/master/filter">
     <input type="hidden" name="_csrf" value="${_csrf.token}">
     <h3 style="color: #1e90ff">Поиск мастеров по категориям</h3>
     <input type="text" name="filter">
     <button class="btn btn-outline-primary" type="submit">Поиск</button>
 </form>
+
 <div class="wrapper">
     <form method="post">
         <input type="hidden" name="_csrf" value="${_csrf.token}">

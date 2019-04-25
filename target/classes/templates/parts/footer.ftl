@@ -26,9 +26,9 @@
             <div class="col-lg-6 footer_contact text-left">
                             <p class="contact-name"><b>ИП Рыбак Д. Н.</b></p>
                             <p class="contact_adress"> индекс, Беларусь, г.Гомель, ул. Советская 134/2, цокольный этаж </p>
-                            <p>#}
+                            <p>
 
-                                    <b>E-mail:</b>#}
+                                    <b>E-mail:</b>
                                     <b><a style="color:#e82d3c; display: inline;"
                                                                    href="mailto:Valtec_Gomel@gmail.com">Valtec_Gomel@gmail.com</a></b>
                             </p>

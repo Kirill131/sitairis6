@@ -1,3 +1,4 @@
+<#include "security.ftl">
 <#import "login.ftl" as l>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,7 +20,19 @@
             </li>
         </ul>
 
-        <#--<div class="navbar-text mr-3">${name}</div>-->
-        <@l.logout />
+
+        <#if name == "unknown">
+            <a href="/login"> Войти </a>
+        <#else>
+                <div class="nav-item mr-4" >
+                    <form method="get" action="/carlist">
+                        <input type="hidden" name="id" value="${id}">
+                        <button class="btn btn-primary" type="submit"> Мои машины </button>
+                    </form>
+                </div>
+            <div class="mr-4">${name}</div>
+            <@l.logout />
+        </#if>
+
     </div>
 </nav>
