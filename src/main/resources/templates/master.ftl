@@ -56,7 +56,7 @@
                     <td>
                         <form method="get" action="/master/${master.idmaster}">
                             <button type="submit" class="btn btn-secondary">Изменить</button>
-                            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+                            <#--<input type="hidden" name="_csrf" value="${_csrf.token}"/>-->
                         </form>
                     </td>
                 </tr>

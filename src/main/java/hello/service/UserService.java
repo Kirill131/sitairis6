@@ -16,6 +16,9 @@ public class UserService implements UserDetailsService {
     @Autowired
     private UserRepo userRepo;
 
+    @Autowired
+    private MailSender mailSender;
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return userRepo.findByUsername(username);
@@ -41,4 +44,8 @@ public class UserService implements UserDetailsService {
         return  userRepo.findByActive(active);
     }
 
+    @Transactional
+    public void leaveAnswer(User user){
+        mailSender.send(user.getEmail(), "Техобслуживание", String.format("Ваш заказ выполнен. \n%s можете забрать свой автоомбиль.", user.getUsername()));
+    }
 }

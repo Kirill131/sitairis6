@@ -63,4 +63,10 @@ public class UserController {
 
         return "redirect:/user";
     }
+
+    @PostMapping("/sendEmail/{user}")
+    public String sendEmail(@PathVariable User user){
+        userService.leaveAnswer(user);
+        return "redirect:/user";
+    }
 }

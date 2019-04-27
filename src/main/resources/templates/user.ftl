@@ -23,6 +23,7 @@
                     <th scope="col">Активен</th>
                     <th scope="col" width="100">Удаление</th>
                     <th scope="col" width="100">Редактирование</th>
+                    <th scope="col" width="100">Отправить уведомление</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -43,8 +44,15 @@
                     </td>
                     <td>
                         <form method="get" action="/user/${user.id}">
-                            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+                            <#--<input type="hidden" name="_csrf" value="${_csrf.token}"/>-->
                             <button type="submit" class="btn btn-secondary">Изменить</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form method="post" action="/user/sendEmail/${user.id}">
+                            <input type="hidden" value="${user.id}" name="id">
+                            <input type="hidden" value="${_csrf.token}" name="_csrf">
+                            <button class="btn btn-success" type="submit">Уведомить</button>
                         </form>
                     </td>
                 </tr>
