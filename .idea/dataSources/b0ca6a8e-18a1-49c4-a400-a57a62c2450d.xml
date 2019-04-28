@@ -1130,8 +1130,8 @@
       <Engine>MyISAM</Engine>
     </table>
     <table id="286" parent="4" name="master"/>
-    <table id="287" parent="4" name="order"/>
-    <table id="288" parent="4" name="order-services"/>
+    <table id="287" parent="4" name="order-services"/>
+    <table id="288" parent="4" name="orders"/>
     <table id="289" parent="4" name="service"/>
     <table id="290" parent="4" name="service-spares"/>
     <table id="291" parent="4" name="spare"/>
@@ -1144,234 +1144,253 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="284" name="state_number">
+    <column id="295" parent="284" name="type_engine">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="296" parent="284" name="type_engine">
+    <column id="296" parent="284" name="iduser">
       <Position>3</Position>
-      <DataType>varchar(45)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="297" parent="284" name="id_user">
-      <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="298" parent="284" name="CarClientFK_idx">
-      <ColNames>id_user</ColNames>
+    <column id="297" parent="284" name="carname">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="298" parent="284" name="statenumber">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="299" parent="284" name="value_engine">
+      <Position>6</Position>
+      <DataType>double|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="300" parent="284" name="vincode">
+      <Position>7</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="301" parent="284" name="year">
+      <Position>8</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="302" parent="284" name="CarClientFK_idx">
+      <ColNames>iduser</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="299" parent="284" name="PRIMARY">
+    <key id="303" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>idcar</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="300" parent="284" name="CarClientFK">
-      <ColNames>id_user</ColNames>
+    <foreign-key id="304" parent="284" name="CarClientFK">
+      <ColNames>iduser</ColNames>
       <RefSchemaName>kurs6</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="301" parent="285" name="next_val">
+    <column id="305" parent="285" name="next_val">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="286" name="idmaster">
+    <column id="306" parent="286" name="idmaster">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="286" name="fIO">
+    <column id="307" parent="286" name="fIO">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="286" name="date_of_birth">
+    <column id="308" parent="286" name="date_of_birth">
       <Position>3</Position>
       <DataType>varchar(15)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="305" parent="286" name="category">
+    <column id="309" parent="286" name="category">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="306" parent="286" name="profile">
+    <column id="310" parent="286" name="profile">
       <Position>5</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="307" parent="286" name="year_start_working">
+    <column id="311" parent="286" name="year_start_working">
       <Position>6</Position>
       <DataType>varchar(5)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="308" parent="286" name="PRIMARY">
+    <key id="312" parent="286" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>idmaster</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="309" parent="287" name="idorder">
+    <column id="313" parent="287" name="id_order">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="314" parent="287" name="id_service">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="315" parent="287" name="OrderFK_idx">
+      <ColNames>id_order</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="316" parent="287" name="ServiceFK_idx">
+      <ColNames>id_service</ColNames>
+      <Type>btree</Type>
+    </index>
+    <foreign-key id="317" parent="287" name="OrderFK">
+      <ColNames>id_order</ColNames>
+      <RefSchemaName>kurs6</RefSchemaName>
+      <RefTableName>orders</RefTableName>
+      <RefColNames>idorder</RefColNames>
+    </foreign-key>
+    <foreign-key id="318" parent="287" name="ServiceFK">
+      <ColNames>id_service</ColNames>
+      <RefSchemaName>kurs6</RefSchemaName>
+      <RefTableName>service</RefTableName>
+      <RefColNames>idservice</RefColNames>
+    </foreign-key>
+    <column id="319" parent="288" name="idorder">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="287" name="timestart">
+    <column id="320" parent="288" name="timestart">
       <Position>2</Position>
-      <DataType>datetime|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="287" name="timefinish">
+    <column id="321" parent="288" name="timefinish">
       <Position>3</Position>
-      <DataType>datetime|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="312" parent="287" name="amount">
+    <column id="322" parent="288" name="amount">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="287" name="id_user">
+    <column id="323" parent="288" name="id">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="287" name="id_master">
+    <column id="324" parent="288" name="idmaster">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="315" parent="287" name="status">
+    <column id="325" parent="288" name="status">
       <Position>7</Position>
       <DataType>varchar(45)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="316" parent="287" name="OrderClientFK_idx">
-      <ColNames>id_user</ColNames>
+    <index id="326" parent="288" name="OrderClientFK_idx">
+      <ColNames>id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="317" parent="287" name="OrderMasterFK_idx">
-      <ColNames>id_master</ColNames>
+    <index id="327" parent="288" name="OrderMasterFK_idx">
+      <ColNames>idmaster</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="318" parent="287" name="PRIMARY">
+    <key id="328" parent="288" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>idorder</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="319" parent="287" name="OrderClientFK">
-      <ColNames>id_user</ColNames>
+    <foreign-key id="329" parent="288" name="OrderClientFK">
+      <ColNames>id</ColNames>
       <RefSchemaName>kurs6</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="320" parent="287" name="OrderMasterFK">
-      <ColNames>id_master</ColNames>
+    <foreign-key id="330" parent="288" name="OrderMasterFK">
+      <ColNames>idmaster</ColNames>
       <RefSchemaName>kurs6</RefSchemaName>
       <RefTableName>master</RefTableName>
       <RefColNames>idmaster</RefColNames>
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="321" parent="288" name="id_order">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="322" parent="288" name="id_service">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="323" parent="288" name="OrderFK_idx">
-      <ColNames>id_order</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="324" parent="288" name="ServiceFK_idx">
-      <ColNames>id_service</ColNames>
-      <Type>btree</Type>
-    </index>
-    <foreign-key id="325" parent="288" name="OrderFK">
-      <ColNames>id_order</ColNames>
-      <RefSchemaName>kurs6</RefSchemaName>
-      <RefTableName>order</RefTableName>
-      <RefColNames>idorder</RefColNames>
-    </foreign-key>
-    <foreign-key id="326" parent="288" name="ServiceFK">
-      <ColNames>id_service</ColNames>
-      <RefSchemaName>kurs6</RefSchemaName>
-      <RefTableName>service</RefTableName>
-      <RefColNames>idservice</RefColNames>
-    </foreign-key>
-    <column id="327" parent="289" name="idservice">
+    <column id="331" parent="289" name="idservice">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="328" parent="289" name="name">
+    <column id="332" parent="289" name="name">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="329" parent="289" name="cost">
+    <column id="333" parent="289" name="cost">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="330" parent="289" name="duration">
+    <column id="334" parent="289" name="duration">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="331" parent="289" name="PRIMARY">
+    <key id="335" parent="289" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>idservice</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="332" parent="290" name="id_service">
+    <column id="336" parent="290" name="id_service">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="333" parent="290" name="id_spare">
+    <column id="337" parent="290" name="id_spare">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="334" parent="290" name="ServiceFK_idx">
+    <index id="338" parent="290" name="ServiceFK_idx">
       <ColNames>id_service</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="335" parent="290" name="SpareFK_idx">
+    <index id="339" parent="290" name="SpareFK_idx">
       <ColNames>id_spare</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="336" parent="290" name="Service2FK">
+    <foreign-key id="340" parent="290" name="Service2FK">
       <ColNames>id_service</ColNames>
       <RefSchemaName>kurs6</RefSchemaName>
       <RefTableName>service</RefTableName>
@@ -1379,7 +1398,7 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="337" parent="290" name="SpareFK">
+    <foreign-key id="341" parent="290" name="SpareFK">
       <ColNames>id_spare</ColNames>
       <RefSchemaName>kurs6</RefSchemaName>
       <RefTableName>spare</RefTableName>
@@ -1387,113 +1406,113 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="338" parent="291" name="idspare">
+    <column id="342" parent="291" name="idspare">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="339" parent="291" name="name">
+    <column id="343" parent="291" name="name">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="291" name="quantity">
+    <column id="344" parent="291" name="quantity">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="341" parent="291" name="cost">
+    <column id="345" parent="291" name="cost">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="342" parent="291" name="PRIMARY">
+    <key id="346" parent="291" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>idspare</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="343" parent="292" name="id">
+    <column id="347" parent="292" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="344" parent="292" name="active">
+    <column id="348" parent="292" name="active">
       <Position>2</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="345" parent="292" name="password">
+    <column id="349" parent="292" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="346" parent="292" name="username">
+    <column id="350" parent="292" name="username">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="347" parent="292" name="fio">
+    <column id="351" parent="292" name="fio">
       <Position>5</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="348" parent="292" name="phone">
+    <column id="352" parent="292" name="phone">
       <Position>6</Position>
       <DataType>varchar(13)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="349" parent="292" name="email">
+    <column id="353" parent="292" name="email">
       <Position>7</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="350" parent="292" name="user_username_uindex">
+    <index id="354" parent="292" name="user_username_uindex">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="351" parent="292" name="PRIMARY">
+    <key id="355" parent="292" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="352" parent="292" name="user_username_uindex">
+    <key id="356" parent="292" name="user_username_uindex">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>user_username_uindex</UnderlyingIndexName>
     </key>
-    <column id="353" parent="293" name="user_id">
+    <column id="357" parent="293" name="user_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="354" parent="293" name="roles">
+    <column id="358" parent="293" name="roles">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="355" parent="293" name="user_id_UNIQUE">
+    <index id="359" parent="293" name="user_id_UNIQUE">
       <ColNames>user_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="356" parent="293" name="fk1_idx">
+    <index id="360" parent="293" name="fk1_idx">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="357" parent="293" name="user_id_UNIQUE">
+    <key id="361" parent="293" name="user_id_UNIQUE">
       <ColNames>user_id</ColNames>
       <UnderlyingIndexName>user_id_UNIQUE</UnderlyingIndexName>
     </key>
-    <foreign-key id="358" parent="293" name="fk11">
+    <foreign-key id="362" parent="293" name="fk11">
       <ColNames>user_id</ColNames>
       <RefSchemaName>kurs6</RefSchemaName>
       <RefTableName>user</RefTableName>

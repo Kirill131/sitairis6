@@ -6,10 +6,10 @@
         <input type="hidden" name="_csrf" value="${_csrf.token}">
         <h3 style="color: #1e90ff">Добаление мастера</h3>
         <input type="text" name="fIO" placeholder="ФИО">
-        <input type="text" name="date_of_birth" placeholder="Дата рождения">
+        <input type="date" name="date_of_birth" placeholder="Дата рождения">
         <input type="number" name="category" placeholder="Категория">
         <input type="number" name="profile" placeholder="Профиль">
-        <input type="text" name="year_start_working" placeholder="Год приема на работу">
+        <input type="text" maxlength="4" name="year_start_working" placeholder="Год приема на работу">
         <button class="btn btn-outline-primary" type="submit">Добавить</button>
     </form>
 </div>
@@ -28,7 +28,6 @@
             <table class="table table-bordered">
                 <thead>
                 <tr>
-                <#--<th scope="col"><input type="checkbox" class="custom-control-input chk-all" name="master"></th>-->
                     <th scope="col">ФИО</th>
                     <th scope="col">Дата рождения</th>
                     <th scope="col">Категория</th>
@@ -56,7 +55,6 @@
                     <td>
                         <form method="get" action="/master/${master.idmaster}">
                             <button type="submit" class="btn btn-secondary">Изменить</button>
-                            <#--<input type="hidden" name="_csrf" value="${_csrf.token}"/>-->
                         </form>
                     </td>
                 </tr>

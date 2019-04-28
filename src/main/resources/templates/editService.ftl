@@ -14,7 +14,7 @@
             <tr align="center">
                 <th><input class="form-control" type="text" name="name" value="${service.name}"></th>
                 <th><input class="form-control" type="text" name="cost" value="${service.cost}"></th>
-                <th><input class="form-control" type="text" name="duration" value="${service.duration}"></th>
+                <th><input class="form-control" type="time" name="duration" value="${service.duration}"></th>
             </tr>
             </thead>
         </table>

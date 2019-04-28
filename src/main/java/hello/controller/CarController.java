@@ -22,7 +22,7 @@ public class CarController {
     private CarService carService;
 
     @GetMapping
-    public String carList( @RequestParam("id") int id,  Map<String, Object> model) {
+    public String carList(@RequestParam("id") int id, Map<String, Object> model) {
         Iterable<Car> cars = carService.loadAllUserCars(id);
         model.put("cars", cars);
 
@@ -31,7 +31,6 @@ public class CarController {
 
     @PostMapping
     public String addCar(Car car, @RequestParam("id") int id,  Map<String, Object> model) {
-//        Car car = new Car(fIO, date_of_birth, category, profile, year_start_working);
         car.setIduser(id);
 
         carService.saveCar(car);
@@ -43,12 +42,13 @@ public class CarController {
     }
 
     @PostMapping("/filter")
-    public String filterMaster(@RequestParam("filter") String filter,@RequestParam("id") int id, Map<String, Object> model) {
+    @PreAuthorize("hasAuthority('ADMIN')")
+    public String filterCar(@RequestParam("filter") String filter, Car car, Map<String, Object> model) {
         Iterable<Car> cars;
         if (filter != null && !filter.isEmpty()) {
             cars = carService.loadCarByVincode(filter);
         } else {
-            cars = carService.loadAllUserCars(id);
+            cars = carService.loadAllUserCars(car.getIduser());
         }
 
         model.put("cars", cars);

@@ -7,7 +7,7 @@
         <h3 style="color: #1e90ff">Добаление услуги</h3>
         <input type="text" name="name" placeholder="Название">
         <input type="text" name="cost" placeholder="Стоимость">
-        <input type="text" name="duration" placeholder="Время">
+        <input type="time" name="duration" placeholder="Время">
         <button class="btn btn-outline-primary" type="submit">Добавить</button>
     </form>
 </div>

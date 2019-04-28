@@ -6,6 +6,7 @@ import javax.persistence.*;
 @Table(name = "master")
 public class Master {
     @Id
+    @Column(name="idmaster")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idmaster;
 

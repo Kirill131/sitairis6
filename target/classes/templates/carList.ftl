@@ -1,8 +1,8 @@
+<#include "parts/security.ftl">
 <#import "parts/common.ftl" as c>
 
 <@c.page "none">
-<#--TEST message!!!-->
-
+<#if !isAdmin>
 <div>
     <form method="post">
         <input type="hidden" name="_csrf" value="${_csrf.token}">
@@ -16,13 +16,16 @@
         <button class="btn btn-outline-primary" type="submit">Добавить</button>
     </form>
 </div>
+</#if>
 
-<form method="post" action="/car/filter">
+<#if isAdmin>
+<form method="post" action="/carlist/filter">
     <input type="hidden" name="_csrf" value="${_csrf.token}">
-    <h3 style="color: #1e90ff">Поиск авто по vin</h3>
+    <h3 style="color: #1e90ff">Поиск всех авто по vin</h3>
     <input type="text" name="filter">
     <button class="btn btn-outline-primary" type="submit">Поиск</button>
 </form>
+</#if>
 
 <div class="wrapper">
     <form method="post">
@@ -31,7 +34,6 @@
             <table class="table table-bordered">
                 <thead>
                 <tr>
-                <#--<th scope="col"><input type="checkbox" class="custom-control-input chk-all" name="master"></th>-->
                     <th scope="col">Id_машины</th>
                     <th scope="col">Машина</th>
                     <th scope="col">Год выпуска</th>

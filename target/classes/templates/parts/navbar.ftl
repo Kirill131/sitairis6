@@ -9,6 +9,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+            <#if isAdmin>
             <li class="nav-item">
                 <a class="nav-link" href="/master">Мастера</a>
             </li>
@@ -18,6 +19,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="/service">Услуги</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/order">Заказы</a>
+            </li>
+            </#if>
         </ul>
 
 
