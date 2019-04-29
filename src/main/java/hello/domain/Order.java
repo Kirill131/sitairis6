@@ -33,6 +33,11 @@ public class Order {
         this.status = status;
     }
 
+    public Order(String timestart, User id, String status) {
+        this.timestart = timestart;
+        this.id = id;
+        this.status = status;
+    }
 
     public String getTimestart() {
         return timestart;

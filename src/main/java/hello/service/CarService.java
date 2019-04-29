@@ -36,6 +36,11 @@ public class CarService {
     }
 
     @Transactional
+    public Car loadCarBycarnameAndIduser(int iduser, String carname){
+        return carRepo.findByIduserAndCarname(iduser, carname);
+    }
+
+    @Transactional
     public Car saveCar(Car car){
         return carRepo.save(car);
     }

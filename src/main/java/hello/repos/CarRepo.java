@@ -14,6 +14,8 @@ public interface CarRepo extends CrudRepository<Car, Long> {
 
     List<Car> findByIduser(int iduser);
 
+    Car findByIduserAndCarname(int iduser, String carname);
+
 
 
 //    Car findByState_number(String state_number);

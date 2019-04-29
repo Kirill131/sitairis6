@@ -35,7 +35,6 @@
                     <td>${orders.status}</td>
                     <td>
                         <form method="get" action="/order/${orders.idorder}">
-                            <input type="hidden" value="${orders.idorder}" name="idorder">
                             <button type="submit" class="btn btn-secondary">Изменить</button>
                         </form>
                     </td>
