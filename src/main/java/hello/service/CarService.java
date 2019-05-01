@@ -1,6 +1,7 @@
 package hello.service;
 
 import hello.domain.Car;
+import hello.domain.User;
 import hello.repos.CarRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

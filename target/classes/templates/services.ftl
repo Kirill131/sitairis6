@@ -16,7 +16,7 @@
 
                         <div class="container-fluid" >
                             <label> Выберите авто: </label>
-                            <select class="mdb-select md-form" data-style="btn-info" searchable="Search here..">
+                            <select name="choiceCar" class="mdb-select md-form" data-style="btn-info" searchable="Search here..">
                             <#list cars as car>
                                 <option value="${car.carname}">${car.carname}</option>
                             </#list>
@@ -25,78 +25,14 @@
 
                         <div class="container-fluid">
                             <label> Выберите услугу: </label>
-                            <select class="selectpicker" data-style="btn-info">
+                            <select name="choiceService" class="selectpicker" data-style="btn-info">
                             <#list services as service>
                                 <option value="${service.name}">${service.name}</option>
                             </#list>
                             </select>
                         </div>
 
-                           <#--<table>-->
-                               <#--<tbody>-->
-                                   <#--<tr style="margin-bottom: 20px">-->
-                                       <#--<td>-->
-                                           <#--<table>-->
-                                               <#--<tbody>-->
-                                               <#--<tr>-->
-                                                   <#--<td>-->
-                                                       <#--<input type="text" class="form-control" id="marka" placeholder="Марка"-->
-                                                              <#--name="marka">-->
-
-                                                   <#--</td>-->
-                                                   <#--<td>-->
-                                                       <#--<input type="text" class="form-control" id="model" placeholder="Модель"-->
-                                                              <#--name="model">-->
-                                                   <#--</td>-->
-                                                   <#--<td>-->
-                                                       <#--<input type="text" class="form-control" id="year" placeholder="Год выпуска"-->
-                                                       <#--name="year">-->
-                                                   <#--</td>-->
-                                               <#--</tr>-->
-                                               <#--</tbody>-->
-                                           <#--</table>-->
-                                       <#--</td>-->
-                                   <#--</tr>-->
-                                   <#--<tr style="margin-bottom: 20px">-->
-                                       <#--<td>-->
-                                           <#--<table>-->
-                                               <#--<tbody>-->
-                                               <#--<tr>-->
-                                                   <#--<td>-->
-                                                       <#--<input type="text" class="form-control" id="type_engine" placeholder="Тип двигателя"-->
-                                                              <#--name="type_engine">-->
-                                                   <#--</td>-->
-                                                   <#--<td>-->
-                                                       <#--<input type="text" class="form-control" id="value" placeholder="Например 1.6"-->
-                                                              <#--name="value">-->
-                                                   <#--</td>-->
-                                               <#--</tr>-->
-                                               <#--</tbody>-->
-                                           <#--</table>-->
-                                       <#--</td>-->
-                                   <#--</tr style="margin-bottom: 20px">-->
-                                   <#--<tr>-->
-                                       <#--<td>-->
-                                           <#--<table>-->
-                                               <#--<tbody>-->
-                                               <#--<tr>-->
-                                                   <#--<td>-->
-                                                       <#--<input type="text" class="form-control" id="vin" placeholder="VIN-код"-->
-                                                              <#--name="vin">-->
-                                                   <#--</td>-->
-                                                   <#--<td>-->
-                                                       <#--<input type="text" class="form-control" id="number" placeholder="Гос.номер"-->
-                                                              <#--name="number">-->
-                                                   <#--</td>-->
-                                               <#--</tr>-->
-                                               <#--</tbody>-->
-                                           <#--</table>-->
-                                       <#--</td>-->
-                                   <#--</tr>-->
-                               <#--</tbody>-->
-                           <#--</table>-->
-
-                        <input id="input" width="312" />
+                        <input id="input" name="datatimestart" width="312" />
                         <script>
                             $('#input').datetimepicker({ footer: true, modal: true });
                         </script>
@@ -115,21 +51,26 @@
                             </tr>
                             </thead>
                             <tbody>
-                <#--<#list servOrders as servOrder>-->
-                <#--<tr>-->
-                    <#--<td>${orders.timestart}</td>-->
-                    <#--<td>${orders.timefinish}</td>-->
-                    <#--<td>${orders.amount}</td>-->
-                    <#--<td>${orders.id}</td>-->
-                    <#--<td>${orders.idmaster}</td>-->
-                    <#--<td>${orders.status}</td>-->
-                    <#--<td>-->
-                        <#--<form method="get" action="/order/${orders.idorder}">-->
-                            <#--<button type="submit" class="btn btn-secondary">Изменить</button>-->
-                        <#--</form>-->
-                    <#--</td>-->
-                <#--</tr>-->
-                <#--</#list>-->
+
+
+                                         <tr>
+                                            <#if flag>
+                                                <#list OrderLines as orderLine>
+                                                 <td>${orderLine[0]}</td>
+                                                 <td>${orderLine[1]}</td>
+                                                 <td>${orderLine[2]}</td>
+                                                 <td>${orderLine[3]}</td>
+                                                 <#--<td>-->
+                                                     <#--<form method="get" action="/service/${service.idservice}">-->
+                                                         <#--<button type="submit" class="btn btn-secondary">Изменить</button>-->
+                                                     <#--&lt;#&ndash;<input type="hidden" name="_csrf" value="${_csrf.token}"/>&ndash;&gt;-->
+                                                     <#--</form>-->
+                                                 <#--</td>-->
+                                                </#list>
+                                            </#if>
+                                         </tr>
+
+
                             </tbody>
                         </table>
 

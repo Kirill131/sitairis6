@@ -7,4 +7,7 @@ import java.util.List;
 
 public interface ServiceRepo extends CrudRepository<Service, Long> {
     List<Service> findByCost(String cost);
+
+    Service findByName(String name);
+
 }

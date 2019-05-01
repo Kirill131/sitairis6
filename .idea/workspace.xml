@@ -2,49 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9250a1d0-22a9-47cd-af7a-b2c11d3197e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b0ca6a8e-18a1-49c4-a400-a57a62c2450d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b0ca6a8e-18a1-49c4-a400-a57a62c2450d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b0ca6a8e-18a1-49c4-a400-a57a62c2450d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b1471d86-1c08-407a-b859-b7eb1a63143e.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/repos/CarRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/repos/CarRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/repos/ServiceRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/repos/ServiceRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/service/ServService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/service/ServService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/services.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/services.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/config/MvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controller/CarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/MasterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controller/MasterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/RegisterController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/ServiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controller/ServiceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/domain/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/Master.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/domain/Master.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controller/RegisterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/domain/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/domain/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/domain/Service.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/domain/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hello/repos/CarRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/repos/CarRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/repos/MasterRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/repos/MasterRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/repos/OrderRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/repos/OrderRepo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hello/repos/ServiceRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/repos/ServiceRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/repos/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/repos/UserRepo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hello/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/service/CarService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/service/MailSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/service/MailSender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/service/MasterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/service/MasterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/service/OrderService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hello/service/ServService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/service/ServService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/order.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/services.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/services.ftl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,7 +69,7 @@
         <item name="sitairis@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="sitairis: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="orders: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="service: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -102,38 +78,38 @@
     <session id="-469297009">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="car" value="3" />
-          <entry key="class" value="1" />
+          <entry key="car" value="4" />
+          <entry key="class" value="3" />
           <entry key="client" value="1" />
-          <entry key="ftl" value="24" />
-          <entry key="java" value="50" />
+          <entry key="ftl" value="26" />
+          <entry key="java" value="68" />
           <entry key="message" value="1" />
           <entry key="order" value="1" />
           <entry key="order-services" value="1" />
           <entry key="orders" value="1" />
           <entry key="properties" value="3" />
           <entry key="sql" value="3" />
-          <entry key="user" value="3" />
+          <entry key="user" value="4" />
           <entry key="user_role" value="1" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="Database Element" value="12" />
-          <entry key="FTL" value="24" />
-          <entry key="JAVA" value="50" />
+          <entry key="CLASS" value="3" />
+          <entry key="Database Element" value="14" />
+          <entry key="FTL" value="26" />
+          <entry key="JAVA" value="68" />
           <entry key="Properties" value="3" />
           <entry key="Scratch" value="3" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="6" />
-          <entry key="ftl" value="981" />
-          <entry key="java" value="853" />
+          <entry key="ftl" value="1160" />
+          <entry key="java" value="1774" />
           <entry key="properties" value="28" />
           <entry key="sql" value="28" />
           <entry key="txt" value="36" />
@@ -141,8 +117,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="FTL" value="981" />
-          <entry key="JAVA" value="853" />
+          <entry key="FTL" value="1160" />
+          <entry key="JAVA" value="1774" />
           <entry key="PLAIN_TEXT" value="36" />
           <entry key="Properties" value="28" />
           <entry key="SQL" value="28" />
@@ -151,12 +127,13 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -166,17 +143,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="119">
+              <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+              <folding>
+                <element signature="e#1155#1156#0" expanded="true" />
+                <element signature="e#1183#1184#0" expanded="true" />
+                <element signature="e#1222#1223#0" expanded="true" />
+                <element signature="e#1256#1257#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+            <state relative-caret-position="371">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,46 +168,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://ebe299f1-827c-46a9-9d49-172c331908e8/schema/sitairis/table/orders">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://ebe299f1-827c-46a9-9d49-172c331908e8/schema/sitairis/table/order-services">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://ebe299f1-827c-46a9-9d49-172c331908e8/schema/sitairis/table/car">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Role.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="150">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <folding>
+                <element signature="e#816#817#0" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Order.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/services.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="715">
+              <caret line="63" column="86" lean-forward="true" selection-start-line="63" selection-start-column="86" selection-end-line="63" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/repos/CarRepo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/config/WebSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -232,8 +236,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="507">
+              <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -244,20 +248,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/CarService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="38" column="40" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="40" />
+            <state relative-caret-position="167">
+              <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hello/repos/CarRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -321,18 +318,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/static/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/MasterEditionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/repos/UserRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/user.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/editUser.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/repos/ServiceRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/domain/Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/domain/Master.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/editMaster.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/MasterController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/service/ServService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/editService.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/ServiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/service/MasterService.java" />
@@ -341,9 +335,7 @@
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/ServicesController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/footer.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/domain/Car.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/master.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/controller/CarController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/carList.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
@@ -351,10 +343,15 @@
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/RegOnServiceController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/services.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/hello/domain/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/repos/ServiceRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/service/ServService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/services.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/domain/Car.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/service/CarService.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/repos/CarRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/controller/CarController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java" />
       </list>
     </option>
@@ -373,10 +370,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="15" />
-    <option name="y" value="4" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -490,8 +487,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -504,7 +501,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556578066884" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556641253322" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="E:/6_help/BookManager" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -533,191 +530,6 @@
       <recent name="E:\Учёба\6сем\Курсовая(СИТАиРИС)\test\sitairis6\src\main\java\hello\domain" />
       <recent name="E:\Учёба\6сем\Курсовая(СИТАиРИС)\test\sitairis6\src\main\java\hello" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/compiler.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources.local.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources/b0ca6a8e-18a1-49c4-a400-a57a62c2450d.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pom.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hello/controller/CarController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hello/controller/UserController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hello/domain/Master.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hello/domain/User.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hello/service/UserService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/application.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/static/clear.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/templates/carList.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/templates/editMaster.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/templates/editService.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/templates/master.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/templates/service.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/templates/user.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/application.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/Application.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/config/MvcConfig.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/config/WebSecurityConfig.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/controller/CarController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/controller/MainController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/controller/MasterController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/controller/RegisterController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/controller/ServiceController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/controller/UserController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/domain/Car.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/domain/Master.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/domain/Role.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/domain/Service.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/domain/User.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/repos/CarRepo.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/repos/MasterRepo.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/repos/ServiceRepo.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/repos/UserRepo.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/service/CarService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/service/MasterService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/service/ServService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/service/UserService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/static/clear.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/templates/carList.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/templates/editMaster.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/templates/editService.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/templates/master.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/templates/parts/navbar.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/templates/service.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/templates/user.ftl</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources/b0ca6a8e-18a1-49c4-a400-a57a62c2450d/storage_v2/_src_/schema/igortest.k-fjpw.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources/b0ca6a8e-18a1-49c4-a400-a57a62c2450d/storage_v2/_src_/schema/kurs.K2kyAA.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources/b0ca6a8e-18a1-49c4-a400-a57a62c2450d/storage_v2/_src_/schema/sales_depart.h_ZvaQ.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources/b0ca6a8e-18a1-49c4-a400-a57a62c2450d/storage_v2/_src_/schema/sales_department.ZXAmrA.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources/b0ca6a8e-18a1-49c4-a400-a57a62c2450d/storage_v2/_src_/schema/task.hTU2AA.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hello/config/MailConfig.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hello/controller/OrderController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hello/domain/Order.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hello/repos/OrderRepo.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hello/service/MailSender.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hello/service/OrderService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/templates/editOrder.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/templates/order.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/config/MailConfig.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/controller/OrderController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/domain/Order.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/repos/OrderRepo.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/service/MailSender.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/service/OrderService.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/templates/editOrder.ftl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/templates/order.ftl</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources/2886b9b6-ccfc-40a0-ae16-4c5d24cc3d78.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_13.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hello/domain/OurService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/hello/domain/OurService.class</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -802,7 +614,8 @@
       <workItem from="1556266028011" duration="4003000" />
       <workItem from="1556312535512" duration="1162000" />
       <workItem from="1556315913981" duration="42000" />
-      <workItem from="1556564492658" duration="12887000" />
+      <workItem from="1556564492658" duration="13466000" />
+      <workItem from="1556620987272" duration="10241000" />
     </task>
     <task id="LOCAL-00001" summary="add master">
       <created>1555858552258</created>
@@ -822,13 +635,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183784000" />
+    <option name="totallyTimeSpent" value="194604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23071104" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -838,7 +651,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.39016393" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.04918033" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.20327869" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -846,7 +659,7 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.18196721" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.3295082" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.3295082" />
@@ -856,7 +669,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.0688351" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.025718609" />
       <window_info anchor="right" id="UML design tool window" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
@@ -914,28 +727,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="add master" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editService.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="75" lean-forward="true" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-562">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b0ca6a8e-18a1-49c4-a400-a57a62c2450d/schema/kurs6/table/user" />
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/MasterController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-423">
@@ -972,20 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.10.RELEASE/spring-data-commons-2.0.10.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Master.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1000,74 +777,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b1471d86-1c08-407a-b859-b7eb1a63143e/schema/kurs6/table/order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://b1471d86-1c08-407a-b859-b7eb1a63143e/schema/kurs6/table/order" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b1471d86-1c08-407a-b859-b7eb1a63143e/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://b1471d86-1c08-407a-b859-b7eb1a63143e/schema/kurs6/table/car">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b1471d86-1c08-407a-b859-b7eb1a63143e/schema/kurs6/table/client">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b1471d86-1c08-407a-b859-b7eb1a63143e/schema/kurs6/table/message">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://b1471d86-1c08-407a-b859-b7eb1a63143e/schema/kurs6/table/car" />
+    <entry file="das://b1471d86-1c08-407a-b859-b7eb1a63143e/schema/kurs6/table/client" />
+    <entry file="das://b1471d86-1c08-407a-b859-b7eb1a63143e/schema/kurs6/table/message" />
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/MailSender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-730" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/config/MvcConfig.java">
@@ -1087,13 +808,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ebe299f1-827c-46a9-9d49-172c331908e8/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/config/MailConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1108,29 +822,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/service.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/RegOnServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/RegOnServiceController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/ServiceController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ebe299f1-827c-46a9-9d49-172c331908e8/schema/sitairis/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1141,24 +837,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/ServService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="17" column="56" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1176,10 +858,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/services.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1326">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="51" />
+    <entry file="das://ebe299f1-827c-46a9-9d49-172c331908e8/schema/sitairis/table/order-services">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1190,37 +872,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/CarController.java">
+    <entry file="das://ebe299f1-827c-46a9-9d49-172c331908e8/schema/sitairis/table/orders">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/repos/OrderRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="153">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.10.RELEASE/spring-data-commons-2.0.10.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/config/MailConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Master.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="e#974#975#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/repos/ServiceRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/ServService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/service.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="53" column="24" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="53" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/services.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="63" column="86" lean-forward="true" selection-start-line="63" selection-start-column="86" selection-end-line="63" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/CarService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/repos/CarRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/service/CarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="40" />
+        <state relative-caret-position="255">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+    <entry file="das://ebe299f1-827c-46a9-9d49-172c331908e8/schema/sitairis/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1231,34 +1001,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://ebe299f1-827c-46a9-9d49-172c331908e8/schema/sitairis/table/orders">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ebe299f1-827c-46a9-9d49-172c331908e8/schema/sitairis/table/order-services">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+        <state relative-caret-position="150">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/CarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/domain/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="119">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding>
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

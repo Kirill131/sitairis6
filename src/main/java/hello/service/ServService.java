@@ -30,4 +30,7 @@ public class ServService {
     public void deleteService(Service service){
         serviceRepo.delete(service);
     }
+
+    @Transactional
+    public Service loadServiceByname(String name){return serviceRepo.findByName(name);}
 }

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Map;
 
@@ -17,6 +18,7 @@ import java.util.Map;
 public class RegisterController {
 
     int id_user;
+    boolean flag;
 
     @Autowired
     private UserRepo userRepo;
@@ -53,12 +55,15 @@ public class RegisterController {
     }
 
     @GetMapping("/registerOnService")
-    public String registrationOnService(@RequestParam("id_user") int id, Map<String, Object> model){
-        id_user = id;
-        Iterable<Car> cars = carService.loadAllUserCars(id);
+    public String registrationOnService(User user, Map<String, Object> model){
+//        id_user = id;
+        System.out.println("USER = " + user.getId());
+        Iterable<Car> cars =  carService.loadAllUserCars(user.getId());
         model.put("cars", cars);
         Iterable<Service> services = servService.loadAllServices();
+        flag = false;
         model.put("services", services);
+        model.put("flag", flag);
 
         return "services";
     }
@@ -69,9 +74,25 @@ public class RegisterController {
                                     @RequestParam("datatimestart") String datetimestart,
                                     Map<String, Object> model){
         Car car = carService.loadCarBycarnameAndIduser(id_user, carName);
+        Service service = servService.loadServiceByname(serviceName);
+        flag = true;
+//
+//        Order order = new Order(id_user, car, datetimestart, "new" );
+        if (carName != null ) {
+            ArrayList<String[]> viewInfo = new ArrayList<>();
 
+            String[] tmp = null;
+            tmp[0] = carName;
+            tmp[1] = serviceName;
+            tmp[2] = datetimestart;
+            tmp[3] = service.getCost();
+            viewInfo.add(tmp);
 
-        Order order = new Order(id_user, car.getIdcar(), datetimestart, "new" );
+//        ArrayList<Order> orderLine = new ArrayList<>();
+//        orderLine.add(order);
+            model.put("OrderLines", viewInfo);
+            model.put("flag" , flag);
+        }
 
         return "services";
     }

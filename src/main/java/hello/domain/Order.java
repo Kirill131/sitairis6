@@ -19,6 +19,9 @@ public class Order {
     @ManyToOne
     @JoinColumn(name="idmaster")
     private Master idmaster;
+    @ManyToOne
+    @JoinColumn(name="car")
+    private Car idcar;
     private String status;
 
     public Order() {
@@ -36,6 +39,13 @@ public class Order {
     public Order(String timestart, User id, String status) {
         this.timestart = timestart;
         this.id = id;
+        this.status = status;
+    }
+
+    public Order(User id, Car idCar, String datetimestart, String status){
+        this.id = id;
+        this.idcar = idCar;
+        this.timestart = datetimestart;
         this.status = status;
     }
 
