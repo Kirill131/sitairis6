@@ -20,6 +20,8 @@ public class ServiceController {
     @GetMapping
     public String ServiceList(Map<String, Object> model) {
         Iterable<Service> services = servService.loadAllServices();
+//        String result = servService.calculateCost(services);
+//        model.put("result", result);
         model.put("services", services);
 
         return "service";
@@ -52,7 +54,7 @@ public class ServiceController {
     }
 
     @PostMapping("deleteService")
-    public String delete(@RequestParam("idService") Service service, Map<String, Object> model){
+    public String delete(@RequestParam("idService") Service service, Map<String, Object> model) {
         servService.deleteService(service);
 
         Iterable<Service> services = servService.loadAllServices();
@@ -68,7 +70,7 @@ public class ServiceController {
     }
 
     @PostMapping("/show")
-    public String edit(@RequestParam String name, @RequestParam String cost, @RequestParam String duration, @RequestParam("idservice") Service service){
+    public String edit(@RequestParam String name, @RequestParam String cost, @RequestParam String duration, @RequestParam("idservice") Service service) {
         service.setName(name);
         service.setCost(cost);
         service.setDuration(duration);

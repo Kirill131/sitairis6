@@ -24,19 +24,19 @@
             <!-- Grid column -->
 
             <div class="col-lg-6 footer_contact text-left">
-                            <p class="contact-name"><b>ИП Рыбак Д. Н.</b></p>
+                            <p class="contact-name"><b>Рыбак И. Д., Коноплич К. Ю.</b></p>
                             <p class="contact_adress"> индекс, Беларусь, г.Гомель, ул. Советская 134/2, цокольный этаж </p>
                             <p>
 
                                     <b>E-mail:</b>
                                     <b><a style="color:#e82d3c; display: inline;"
-                                                                   href="mailto:Valtec_Gomel@gmail.com">Valtec_Gomel@gmail.com</a></b>
+                                                                   href="mailto:Valtec_Gomel@gmail.com">stobykikiry@yandex.ru</a></b>
                             </p>
                             <a class="contact-number" href="tel:+375253185258" style="display:inline">
                                 <i class="sprite sprite-call"></i>
                                 +375 (29)
-                                <span class="red"> 318-58-52 </span>
-                                <span class="normal"> (Life) </span>
+                                <span class="red"> 321-54-54 </span>
+                                <span class="normal"> (МТС) </span>
                             </a>
 
                             <div class="text-left" style="margin-top: 25px">

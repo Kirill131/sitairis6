@@ -23,13 +23,12 @@
                 <a class="nav-link" href="/order">Заказы</a>
             </li>
             </#if>
-            <#if name != "unknown">
+            <#if name != "unknown" && !isAdmin>
                 <form method="get" action="/registerOnService">
                     <input type="hidden" name="id_user" value="${id}">
                     <button class="btn btn-primary" type="submit"> Запись </button>
                 </form>
             </#if>
-
         </ul>
 
 

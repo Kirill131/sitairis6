@@ -3,6 +3,7 @@ package hello.controller;
 import hello.domain.Master;
 import hello.domain.Order;
 import hello.domain.User;
+import hello.service.MasterService;
 import hello.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -19,10 +20,16 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
+    @Autowired
+    private MasterService masterService;
+
     @GetMapping
     public String orderList(Map<String, Object> model) {
         Iterable<Order> orders = orderService.loadAllOrders();
+        Iterable<Master> masters = masterService.loadAllMasters();
+
         model.put("orders", orders);
+        model.put("masters", masters);
 
         return "order";
     }

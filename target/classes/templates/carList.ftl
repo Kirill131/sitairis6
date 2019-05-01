@@ -41,8 +41,9 @@
                     <th scope="col">Тип топлива</th>
                     <th scope="col">Гос. номер</th>
                     <th scope="col">VIN</th>
-                    <th scope="col" width="100">Удалить</th>
-                    <th scope="col" width="100">Редактировать</th>
+                    <#if !isAdmin>
+                        <th scope="col" width="100">Удалить</th>
+                    </#if>
                 </tr>
                 </thead>
                 <tbody>
@@ -55,6 +56,7 @@
                     <td>${car.type_engine}</td>
                     <td>${car.statenumber}</td>
                     <td>${car.vincode}</td>
+                    <#if !isAdmin>
                     <td>
                         <form method="post" action="/carlist/deleteCar">
                             <input type="hidden" value="${car.idcar}" name="idcar">
@@ -63,12 +65,7 @@
                             <button class="btn btn-danger" type="submit">Удалить</button>
                         </form>
                     </td>
-                    <td>
-                        <form method="get" action="/carlist/${car.idcar}">
-                            <button type="submit" class="btn btn-secondary">Изменить</button>
-                            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-                        </form>
-                    </td>
+                    </#if>
                 </tr>
                 </#list>
                 </tbody>

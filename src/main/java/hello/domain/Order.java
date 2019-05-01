@@ -20,7 +20,7 @@ public class Order {
     @JoinColumn(name="idmaster")
     private Master idmaster;
     @ManyToOne
-    @JoinColumn(name="car")
+    @JoinColumn(name="idcar")
     private Car idcar;
     private String status;
 
