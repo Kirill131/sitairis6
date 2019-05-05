@@ -1,6 +1,7 @@
 package hello.service;
 
 import hello.domain.Order;
+import hello.domain.User;
 import hello.repos.OrderRepo;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,5 +28,12 @@ public class OrderService {
     @Transactional
     public Order saveOrders(Order orders){
         return orderRepo.save(orders);
+    }
+
+
+    public void addServices(Order order, hello.domain.Service currService) {
+        order.getServices().add(currService);
+
+        orderRepo.save(order);
     }
 }

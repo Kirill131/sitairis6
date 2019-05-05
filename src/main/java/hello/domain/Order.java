@@ -1,6 +1,8 @@
 package hello.domain;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "orders")
@@ -24,6 +26,14 @@ public class Order {
     private Car idcar;
     private String status;
 
+    @ManyToMany
+    @JoinTable(
+            name = "order_services",
+            joinColumns = { @JoinColumn(name = "idservice")},
+            inverseJoinColumns = { @JoinColumn(name = "idorder") }
+    )
+    private Set<Service> services = new HashSet<>();
+
     public Order() {
     }
 
@@ -34,6 +44,32 @@ public class Order {
         this.id = id;
         this.idmaster = idmaster;
         this.status = status;
+    }
+
+    public Order(String timestart, String timefinish, User id, Master idmaster, String status) {
+        this.timestart = timestart;
+        this.timefinish = timefinish;
+        this.idmaster = idmaster;
+        this.status = status;
+    }
+
+    public Order(String timestart, String timefinish, User id, Master idmaster, String status, Car idCar) {
+        this.timestart = timestart;
+        this.timefinish = timefinish;
+        this.id = id;
+        this.idmaster = idmaster;
+        this.status = status;
+        this.idcar = idCar;
+    }
+
+    public Order(String timestart, String timefinish, int amount, User id, Master idmaster, String status, Car idCar) {
+        this.timestart = timestart;
+        this.timefinish = timefinish;
+        this.amount = amount;
+        this.id = id;
+        this.idmaster = idmaster;
+        this.status = status;
+        this.idcar = idCar;
     }
 
     public Order(String timestart, User id, String status) {
@@ -103,5 +139,21 @@ public class Order {
 
     public void setIdorder(Long idorder) {
         this.idorder = idorder;
+    }
+
+    public Car getIdcar() {
+        return idcar;
+    }
+
+    public void setIdcar(Car idcar) {
+        this.idcar = idcar;
+    }
+
+    public Set<Service> getServices() {
+        return services;
+    }
+
+    public void setServices(Set<Service> services) {
+        this.services = services;
     }
 }

@@ -45,6 +45,11 @@ public class UserService implements UserDetailsService {
     }
 
     @Transactional
+    public User loadUserById(int id){
+        return  userRepo.findById(id);
+    }
+
+    @Transactional
     public void leaveAnswer(User user){
         mailSender.send(user.getEmail(), "Техобслуживание", String.format("Ваш заказ выполнен. \n%s можете забрать свой автоомбиль.", user.getUsername()));
     }

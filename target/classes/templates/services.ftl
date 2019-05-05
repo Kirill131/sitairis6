@@ -1,3 +1,4 @@
+<#include "parts/security.ftl">
 <#import "parts/common.ftl" as c>
 <#import "parts/login.ftl" as l>
 
@@ -50,8 +51,8 @@
                         <th scope="col">К оплате</th>
                     </tr>
                     </thead>
-<#if flag>
-    <#list OrderLines as orderLine>
+                    <#if flag>
+                        <#list OrderLines as orderLine>
                             <tbody>
                             <tr>
                                 <td>${orderLine[0]}</td>
@@ -60,14 +61,16 @@
                                 <td>${orderLine[3]}</td>
                             </tr>
                             </tbody>
-    </#list>
+                        </#list>
                     <h3>Сумма заказа: ${sum}</h3>
-                    <form method="post" action="/registerOnService/confirm">
-                        <input type="hidden" name="confirm">
-                        <input type="hidden" name="_csrf" value="${_csrf.token}">
-                        <button class="btn btn-outline-primary" type="submit">Готово</button>
-                    </form>
-</#if>
+                    <#--<form method="post" action="/registerOnService/confirm">-->
+                        <#--<input type="hidden" name="confirm">-->
+                        <#--<input type="hidden" name="id_user"  value="${id}>-->
+                        <#--<input type="hidden" name="_csrf" value="${_csrf.token}">-->
+                        <#--<button class="btn btn-outline-primary" type="submit">Готово</button>-->
+                    <#--</form>-->
+                    <a class="btn btn-info" href="/">Готово</a>
+                    </#if>
                 </table>
             </div>
         </div>
