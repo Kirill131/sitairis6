@@ -26,10 +26,8 @@ public class OrderController {
     @GetMapping
     public String orderList(Map<String, Object> model) {
         Iterable<Order> orders = orderService.loadAllOrders();
-        Iterable<Master> masters = masterService.loadAllMasters();
 
         model.put("orders", orders);
-        model.put("masters", masters);
 
         return "order";
     }
@@ -63,21 +61,25 @@ public class OrderController {
     }
 
     @GetMapping("/{orders}")
-    public String editOrder(@PathVariable Order orders, Model model) {
-        model.addAttribute("orders", orders);
+    public String editOrder(@PathVariable("orders") Long orders, Model model) {
+        Order order1 = orderService.loadOrder(orders);
+        Iterable<Master> masters = masterService.loadAllMasters();
+        model.addAttribute("masters", masters);
+
+        model.addAttribute("orders", order1);
+
         return "editOrder";
     }
 
     @PostMapping("/show")
-    public String edit(@RequestParam("idorder") Order orders, @RequestParam String timestart, @RequestParam String timefinish,
-                       @RequestParam int amount, @RequestParam User id, @RequestParam Master idmaster,
+    public String edit(@RequestParam("idorder") Long idorder, @RequestParam String timefinish,
+                       @RequestParam int amount, @RequestParam Master idmaster,
                        @RequestParam String status) {
+        Order orders = orderService.loadOrder(idorder);
 
-        orders.setTimestart(timestart);
         orders.setTimefinish(timefinish);
         orders.setAmount(amount);
         orders.setIdmaster(idmaster);
-        orders.setId(id);
         orders.setStatus(status);
         orderService.saveOrders(orders);
 

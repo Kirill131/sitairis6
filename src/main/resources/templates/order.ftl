@@ -22,7 +22,6 @@
                     <th scope="col">Мастер</th>
                     <th scope="col">Статус</th>
                     <th scope="col" width="100">Редактирование</th>
-                    <th scope="col" width="100">Мастер</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -37,18 +36,6 @@
                     <td>
                         <form method="get" action="/order/${orders.idorder}">
                             <button type="submit" class="btn btn-secondary">Изменить</button>
-                        </form>
-                    </td>
-                    <td>
-                        <form>
-                            <label>
-                                <select class="combo-box" name="idmaster">
-                                    <option value="default"></option>
-                            <#list masters as master>
-                                <option>${master.idmaster}</option>
-                            </#list>
-                                </select>
-                            </label>
                         </form>
                     </td>
                 </tr>

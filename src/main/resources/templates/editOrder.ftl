@@ -11,7 +11,7 @@
                 <th scope="col">Время окончания</th>
                 <th scope="col">Сумма</th>
                 <th scope="col">Клиент</th>
-                <th scope="col">Мастер</th>
+                <th scope="col">Назначить мастера</th>
                 <th scope="col">Статус</th>
             </tr>
             <tr align="center">
@@ -19,7 +19,18 @@
                 <th><input class="form-control" name="timefinish" value="${orders.timefinish}"></th>
                 <th><input class="form-control" type="number" name="amount" value="${orders.amount}"></th>
                 <th><input class="form-control" disabled name="id_user" value="${orders.id}"></th>
-                <th><input class="form-control" name="id_master" value="${orders.idmaster}"></th>
+                <th>
+                    <form>
+                        <label>
+                            <select class="combo-box" name="idmaster">
+                                <option value="default">${orders.idmaster}</option>
+                            <#list masters as master>
+                                <option>${master.idmaster}</option>
+                            </#list>
+                            </select>
+                        </label>
+                    </form>
+                </th>
                 <th><input class="form-control" type="text" name="status" value="${orders.status}"></th>
             </tr>
             </thead>

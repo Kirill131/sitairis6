@@ -36,4 +36,9 @@ public class OrderService {
 
         orderRepo.save(order);
     }
+
+    @Transactional
+    public Order loadOrder(Long idorder){
+        return orderRepo.findByIdorder(idorder);
+    }
 }
