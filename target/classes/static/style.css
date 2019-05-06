@@ -2,7 +2,7 @@ html, body{
 	height: 100%;
 	max-height: 100%;
 	max-width:100%;
-	background-color: whitesmoke;
+	background-color: red;
 	/*background-image: url("img/main.jpg");*/
 	font: 13px/1.5 Verdana, Tahoma, Arial, sans-serif;
 }
@@ -144,7 +144,7 @@ html, body{
 .product-item{
 	/*height: 300px;*/
 	background-color: white;
-	border: 1px solid slategrey;
+	border: 10px solid darkred;
 	position: relative;
 	padding-bottom: 15px;
 	padding-top: 10px;

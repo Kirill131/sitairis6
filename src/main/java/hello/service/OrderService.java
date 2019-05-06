@@ -26,6 +26,11 @@ public class OrderService {
     }
 
     @Transactional
+    public Iterable<Order> loadAllUserOrders(User user){
+        return orderRepo.findById(user);
+    }
+
+    @Transactional
     public Order saveOrders(Order orders){
         return orderRepo.save(orders);
     }

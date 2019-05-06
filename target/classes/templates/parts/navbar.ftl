@@ -1,7 +1,7 @@
 <#include "security.ftl">
 <#import "login.ftl" as l>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ccfff7;">
     <a class="navbar-brand" href="/">СТО</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,8 +26,14 @@
             <#if name != "unknown" && !isAdmin>
                 <form method="get" action="/registerOnService">
                     <input type="hidden" name="id_user" value="${id}">
-                    <button class="btn btn-primary" type="submit"> Запись </button>
+                    <button class="btn btn-info" type="submit"> Запись </button>
                 </form>
+
+                <form method="get" action="/myOrders">
+                    <input type="hidden" name="id_user" value="${id}">
+                    <button class="btn btn-info" type="submit"> История обслуживания  </button>
+                </form>
+
             </#if>
         </ul>
 

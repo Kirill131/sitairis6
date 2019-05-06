@@ -1,9 +1,11 @@
 package hello.controller;
 
 import hello.domain.Master;
+import hello.domain.Order;
 import hello.domain.User;
 import hello.repos.MasterRepo;
 import hello.repos.UserRepo;
+import hello.service.OrderService;
 import hello.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -19,6 +21,10 @@ import java.util.Map;
 @Controller
 
 public class MainController {
+
+    @Autowired
+    private OrderService orderService;
+
    @GetMapping("/")
     public String hello() {
 //        model.addAttribute("name", name);
@@ -38,5 +44,15 @@ public class MainController {
     public String me(Map<String, Object> model){
 
         return "main";
+    }
+
+    @GetMapping("/myOrders")
+    public String orderHistory(@RequestParam("id_user") int user, Model model){
+        User u = new User();
+        u.setId(user);
+        Iterable<Order> orders = orderService.loadAllUserOrders(u);
+        model.addAttribute("orders", orders);
+
+       return "order";
     }
 }
