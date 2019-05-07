@@ -42,7 +42,7 @@
                     <#if isAdmin>
                     <td>${orders.id}</td>
                     </#if>
-                    <td>${orders.idmaster}</td>
+                    <td>${orders.idmaster.fIO}</td>
                     <td>${orders.status}</td>
                     <#if isAdmin>
                     <td>
