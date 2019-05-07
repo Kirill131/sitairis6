@@ -25,7 +25,7 @@
                             <select class="combo-box" name="idmaster">
                                 <option value="default">${orders.idmaster}</option>
                             <#list masters as master>
-                                <option>${master.idmaster}</option>
+                                <option name="mast">${master.idmaster}</option>
                             </#list>
                             </select>
                         </label>

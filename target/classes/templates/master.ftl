@@ -33,6 +33,7 @@
                     <th scope="col">Категория</th>
                     <th scope="col">Профиль</th>
                     <th scope="col">Год начала работы</th>
+                    <th scope="col">Зарплата</th>
                     <th scope="col" width="100">Увольнение</th>
                     <th scope="col" width="100">Редактирование</th>
                 </tr>
@@ -45,6 +46,7 @@
                     <td>${master.category}</td>
                     <td>${master.profile}</td>
                     <td>${master.year_start_working}</td>
+                    <td>${master.salary}</td>
                     <td>
                         <form method="post" action="/master/deleteMaster">
                             <input type="hidden" value="${master.idmaster}" name="masterId">

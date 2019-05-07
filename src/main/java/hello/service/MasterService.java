@@ -33,4 +33,9 @@ public class MasterService {
     public void deleteMaster(Master master){
         masterRepo.delete(master);
     }
+
+    @Transactional
+    public Master loadMaster(Long idmaster){
+        return masterRepo.findByIdmaster(idmaster);
+    }
 }

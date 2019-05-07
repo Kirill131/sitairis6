@@ -14,6 +14,7 @@ public class Master {
     private String date_of_birth;
     private int category;
     private int profile;
+    private double salary;
     private String year_start_working;
 
     public Master(){
@@ -74,4 +75,13 @@ public class Master {
     public void setYear_start_working(String year_start_working) {
         this.year_start_working = year_start_working;
     }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
 }

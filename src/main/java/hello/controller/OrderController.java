@@ -77,6 +77,14 @@ public class OrderController {
                        @RequestParam String status) {
         Order orders = orderService.loadOrder(idorder);
 
+        if (timefinish != null) {
+            Master master = masterService.loadMaster(idmaster.getIdmaster());
+            double salary = master.getSalary();
+            salary += amount * 0.3 * master.getCategory();
+            master.setSalary(salary);
+            masterService.saveMasters(master);
+        }
+
         orders.setTimefinish(timefinish);
         orders.setAmount(amount);
         orders.setIdmaster(idmaster);
