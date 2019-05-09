@@ -15,9 +15,9 @@ public class Car {
     private double value_engine;
     private int year;
     private String vincode;
-    private int iduser;
+    private Long iduser;
 
-    public Car(String carname, String statenumber, String type_engine, double value_engine, int year, String vincode, int iduser) {
+    public Car(String carname, String statenumber, String type_engine, double value_engine, int year, String vincode, Long iduser) {
         this.carname = carname;
         this.statenumber = statenumber;
         this.type_engine = type_engine;
@@ -95,11 +95,11 @@ public class Car {
         this.vincode = vincode;
     }
 
-    public int getIduser() {
+    public Long getIduser() {
         return iduser;
     }
 
-    public void setIduser(int iduser) {
+    public void setIduser(Long iduser) {
         this.iduser = iduser;
     }
 }

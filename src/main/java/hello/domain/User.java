@@ -13,7 +13,7 @@ public class User implements UserDetails {
     @Id
     @Column(name="id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;   // тут был Long
+    private Long id;   // тут был Long
     private String username;
     private String password;
     private String fio;
@@ -26,11 +26,11 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

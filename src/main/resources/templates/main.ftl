@@ -15,7 +15,7 @@
                 </div>
                 <h4><a class="text-in_block"> Диагностика авто </a></h4>
                 <div class="add-to-card-btn">
-                    <a href="../more/about.html#opyt" class="btn btn-danger text-font">
+                    <a href="/about#diagnostic" class="btn btn-danger text-font">
                         Подробнее
                     </a>
                 </div>
@@ -29,7 +29,7 @@
                 </div>
                 <h4><a class="text-in_block"> Любой ремонт </a></h4>
                 <div class="add-to-card-btn">
-                    <a href="../more/about.html#garantiya" class="btn btn-danger text-font">
+                    <a href="/about#repair" class="btn btn-danger text-font">
                         Подробнее
                     </a>
                 </div>
@@ -43,7 +43,7 @@
                 </div>
                 <h4><a class="text-in_block"> Внешний вид </a></h4>
                 <div class="add-to-card-btn">
-                    <a href="../more/about.html#skidki" class="btn btn-danger text-font">
+                    <a href="/about#look" class="btn btn-danger text-font">
                         Подробнее
                     </a>
                 </div>
@@ -57,7 +57,7 @@
                 </div>
                 <h4><a class="text-in_block"> Автомойка </a></h4>
                 <div class="add-to-card-btn">
-                    <a href="../more/about.html#opt" class="btn btn-danger text-font">
+                    <a href="/about#wash" class="btn btn-danger text-font">
                         Подробнее
                     </a>
                 </div>

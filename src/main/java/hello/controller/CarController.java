@@ -22,7 +22,7 @@ public class CarController {
     private CarService carService;
 
     @GetMapping
-    public String carList(@RequestParam("id") int id, Map<String, Object> model) {
+    public String carList(@RequestParam("id") Long id, Map<String, Object> model) {
         Iterable<Car> cars = carService.loadAllUserCars(id);
         model.put("cars", cars);
 
@@ -30,7 +30,7 @@ public class CarController {
     }
 
     @PostMapping
-    public String addCar(Car car, @RequestParam("id") int id,  Map<String, Object> model) {
+    public String addCar(Car car, @RequestParam("id") Long id,  Map<String, Object> model) {
         car.setIduser(id);
 
         carService.saveCar(car);

@@ -24,17 +24,22 @@
             </li>
             </#if>
             <#if name != "unknown" && !isAdmin>
+            <div class="mr-3">
                 <form method="get" action="/registerOnService">
                     <input type="hidden" name="id_user" value="${id}">
                     <button class="btn btn-info" type="submit"> Запись </button>
                 </form>
-
+            </div>
+                <div>
                 <form method="get" action="/myOrders">
                     <input type="hidden" name="id_user" value="${id}">
                     <button class="btn btn-info" type="submit"> История обслуживания  </button>
                 </form>
-
+            </div>
             </#if>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">О нас</a>
+            </li>
         </ul>
 
 

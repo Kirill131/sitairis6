@@ -46,10 +46,23 @@ public class MainController {
         return "main";
     }
 
+    @GetMapping("/about")
+    public String about(Map<String, Object> model){
+
+        return "about";
+    }
+
     @GetMapping("/myOrders")
-    public String orderHistory(@RequestParam("id_user") int user, Model model){
+    public String orderHistory(@RequestParam("id_user") String user,
+                               @RequestParam(value = "action", required = false) String action,
+                               @RequestParam(value = "order", required = false) String idorder,
+                               Model model){
+        if (action != null){
+            Order order = orderService.loadOrder(Long.parseLong(idorder));
+            orderService.deleteOrder(order);
+        }
         User u = new User();
-        u.setId(user);
+        u.setId(Long.parseLong(user));
         Iterable<Order> orders = orderService.loadAllUserOrders(u);
         model.addAttribute("orders", orders);
 

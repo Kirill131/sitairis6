@@ -60,7 +60,7 @@ public class RegisterController {
     }
 
     @GetMapping("/registerOnService")
-    public String registrationOnService(@RequestParam("id_user") int id, Map<String, Object> model) {
+    public String registrationOnService(@RequestParam("id_user") Long id, Map<String, Object> model) {
 
         System.out.println("USER = " + id);
         Iterable<Car> cars = carService.loadAllUserCars(id);

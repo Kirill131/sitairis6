@@ -9,7 +9,7 @@
         <h3 style="color: #1e90ff">Добаление авто</h3>
         <input type="text" name="carname" placeholder="Название: Opel Astra">
         <input type="text" name="year" placeholder="Год выпуска">
-        <input type="number" name="value_engine" placeholder="Объём двигателя">
+        <input type="text" name="value_engine" placeholder="Объём двигателя">
         <input type="text" name="type_engine" placeholder="Тип топлива">
         <input type="text" name="statenumber" placeholder="Гос.номер">
         <input type="text" name="vincode" placeholder="Vin код">

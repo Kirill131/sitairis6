@@ -32,7 +32,7 @@ public class CarService {
     }
 
     @Transactional
-    public Iterable<Car> loadAllUserCars(int iduser){
+    public Iterable<Car> loadAllUserCars(Long iduser){
         return carRepo.findByIduser(iduser);
     }
 

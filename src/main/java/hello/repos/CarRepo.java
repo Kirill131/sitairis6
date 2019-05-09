@@ -13,7 +13,7 @@ public interface CarRepo extends CrudRepository<Car, Long> {
 
     List<Car> findByIdcar(int idcar);
 
-    List<Car> findByIduser(int iduser);
+    List<Car> findByIduser(Long iduser);
 
     Car findByIduserAndCarname(int iduser, String carname);
 

@@ -80,7 +80,7 @@ public class OrderController {
         if (timefinish != null) {
             Master master = masterService.loadMaster(idmaster.getIdmaster());
             double salary = master.getSalary();
-            salary += amount * 0.3 * master.getCategory();
+            salary += amount * 0.1 * master.getCategory();
             master.setSalary(salary);
             masterService.saveMasters(master);
         }

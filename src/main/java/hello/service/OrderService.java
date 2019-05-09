@@ -46,4 +46,9 @@ public class OrderService {
     public Order loadOrder(Long idorder){
         return orderRepo.findByIdorder(idorder);
     }
+
+    @Transactional
+    public void deleteOrder(Order order){
+        orderRepo.delete(order);
+    }
 }

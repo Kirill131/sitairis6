@@ -51,6 +51,6 @@ public class UserService implements UserDetailsService {
 
     @Transactional
     public void leaveAnswer(User user){
-        mailSender.send(user.getEmail(), "Техобслуживание", String.format("Ваш заказ выполнен. \n%s можете забрать свой автоомбиль.", user.getUsername()));
+        mailSender.send(user.getEmail(), "Техобслуживание", String.format("Ваш заказ выполнен. \n%s Можете забрать свой автомобиль.", user.getUsername()));
     }
 }

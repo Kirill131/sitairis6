@@ -51,11 +51,22 @@
                         </form>
                     </td>
                     <#else>
-                        <td>
-                            <form method="get" action="/order/${orders.idorder}">
-                                <button type="submit" class="btn btn-secondary">Отказаться</button>
-                            </form>
-                        </td>
+                        <#if orders.status != "Закрыт">
+                            <td>
+                                <form method="get" action="/myOrders">
+                                    <input type="hidden" name="action" value="del">
+                                    <input type="hidden" name="id_user" value="${id}">
+                                    <input type="hidden" name="order" value="${orders.idorder}">
+                                    <button type="submit" class="btn btn-danger">Отказаться</button>
+                                </form>
+                            </td>
+                        <#else>
+                            <td>
+                                <form method="get" action="/order/${orders.idorder}">
+                                    <button type="submit" class="btn btn-secondary disable">Отказаться</button>
+                                </form>
+                            </td>
+                        </#if>
                     </#if>
                 </tr>
                 </#list>
